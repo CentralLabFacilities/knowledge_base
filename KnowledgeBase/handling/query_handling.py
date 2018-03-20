@@ -14,7 +14,7 @@ def int_to_xml(int):
 
 def float_to_xml(float):
     # TODO: rewrite proper
-    return '<FLOAT val="' + str(float) +"'/>'
+    return '<FLOAT val="' + str(float) + '"/>'
 
 
 def handle_who(query):
