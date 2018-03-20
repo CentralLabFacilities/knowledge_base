@@ -4,17 +4,17 @@ from utils import retrieve_object_by_identifier, get_class_of_bdo
 
 def str_to_xml(str):
     # TODO: rewrite proper
-    return '<STRING val= ' + str + '>'
+    return '<STRING val="' + str + '"/>'
 
 
 def int_to_xml(int):
     # TODO: rewrite proper
-    return '<INT val= ' + str(int) + '>'
+    return '<INT val="' + str(int) + '"/>'
 
 
 def float_to_xml(float):
     # TODO: rewrite proper
-    return '<FLOAT val= ' + str(float) + '>'
+    return '<FLOAT val="' + str(float) + '"/>'
 
 
 def handle_who(query):
