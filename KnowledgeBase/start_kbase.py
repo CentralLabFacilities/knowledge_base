@@ -66,7 +66,7 @@ def handle_query(req):
         'show': qh.handle_show
     }
     ans = QueryResponse()
-    msg = req.query.lower()
+    msg = repr(req.query)[1:-1].lower()
     print('DEBUG: got query ' + str(msg))
     query = utils.reduce_query(msg, accepted_w_word)
     print('DEBUG: reduced query ' + str(query))
@@ -90,10 +90,9 @@ def handle_data(req):
         'forget': dh.handle_forget
     }
     ans = DataResponse()
-    cmd = req.command.lower()
+    cmd = repr(req.command)[1:-1].lower()
 
-    success = True
-    print('DEBUG: got command: ' + req.command)
+    print('DEBUG: got command: ' + str(cmd))
     cmd = utils.reduce_query(cmd, accepted_d_word)
     print('DEBUG: reduced query ' + str(cmd))
     d_word = cmd[0]

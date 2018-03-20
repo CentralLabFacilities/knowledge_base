@@ -52,6 +52,6 @@ class Person(me.Document):
 
 
         for potential_posi in xml_tree.getchildren():
-            if potential_posi.tag == Positiondata.get_tag():
+            if potential_posi.tag == Positiondata.get_tag().lower():
                 pers.position = Positiondata.from_xml(potential_posi)
         return pers

@@ -49,8 +49,9 @@ def handle_remember(data):
     # data is list with one element. It is a xml format of a BDO class.
     # TODO: filter wrong querries
     xml_string = data[0]
+    xml_tree = ET.fromstring(xml_string.encode('utf-8'))
     try:
-        xml_tree = ET.fromstring(xml_string)
+        pass
     except Exception:
         print('XML parsing not successful.')
         return False, 21
@@ -66,6 +67,21 @@ def handle_remember(data):
     try:
         new_obj = available_classes[xml_tree.tag].from_xml(xml_tree)
         new_obj.save()
+        if type(new_obj) == Person:
+            nbdo = Crowd.objects()[0]
+            nbdo.update(add_to_set__persons=[new_obj])
+        elif type(new_obj) == Location:
+            nbdo = Arena.objects()[0]
+            nbdo.update(add_to_set__locations=[new_obj])
+        elif type(new_obj) == Room:
+            nbdo = Arena.objects()[0]
+            nbdo.update(add_to_set__rooms=[new_obj])
+        elif type(new_obj) == Door:
+            nbdo = Arena.objects()[0]
+            nbdo.update(add_to_set__doors=[new_obj])
+        elif type(new_obj) == Rcobject:
+            nbdo = Rcobjects.objects()[0]
+            nbdo.update(add_to_set__rcobjects=[new_obj])
         return True, 0
     except Exception:
         print('Error in converting the given xml to a BDO')
