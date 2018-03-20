@@ -1,4 +1,3 @@
 db_name: default_db
-db_identifier: TestKBase
 copy_on_startup: True
 mongodb_port: 27018
