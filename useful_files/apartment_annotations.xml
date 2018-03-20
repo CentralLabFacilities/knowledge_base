@@ -75,7 +75,7 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-  <ANNOTATION label="room:livingroom">
+  <ANNOTATION label="room:living room">
     <TIMESTAMP>
       <INSERTED value="1520959706657"/>
       <UPDATED value="1520959706657"/>
@@ -233,7 +233,7 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-  <ANNOTATION label="location:comfychair">
+  <ANNOTATION label="location:comfy chair">
     <TIMESTAMP>
       <INSERTED value="1520959706770"/>
       <UPDATED value="1520959706770"/>
@@ -349,7 +349,7 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-  <ANNOTATION label="location:livingtable">
+  <ANNOTATION label="location:living table">
     <TIMESTAMP>
       <INSERTED value="1520959706842"/>
       <UPDATED value="1520959706842"/>
@@ -639,7 +639,7 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-  <ANNOTATION label="location:kitchencounter">
+  <ANNOTATION label="location:kitchen counter">
     <TIMESTAMP>
       <INSERTED value="1520959707028"/>
       <UPDATED value="1520959707028"/>

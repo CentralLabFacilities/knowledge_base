@@ -242,8 +242,6 @@ The question word was not in the list of accepted or supported question words.
 #### Starting with 4: Which queries
  - 41
    - The name of the class of BDO is not viable.
- - 42
-   - The attribute specified by the query is not supported to be returned yet.
 
 #### Starting with 5: How many queries
  - 51

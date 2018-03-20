@@ -186,9 +186,14 @@ def handle_which(query):
     # get attribute for which the number of distinct elements shall be found
     complex_attributes = ['room', 'location']
     attribute_of_class = query[1]
-    if attribute_of_class in complex_attributes:
-        attribute_of_class += '__name'
     value = query[2]
+    if attribute_of_class in complex_attributes:
+        rloc_class = None
+        if attribute_of_class == 'room':
+            rloc_class = Room
+        else:
+            rloc_class = Location
+        value = rloc_class.objects(name=value).get()
     method_parameter_dict = {attribute_of_class : value}
     list_of_searched_bdo = class_of_bdo.objects(**method_parameter_dict)
     # prepare root node for list

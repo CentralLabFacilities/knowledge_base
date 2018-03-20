@@ -70,7 +70,7 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
-   <ANNOTATION label="room:livingroom">
+   <ANNOTATION label="room:living room">
       <VIEWPOINT label="main">
          <POSITIONDATA frameid="map" theta="0.0">
             <POINT2D x="12.3839998245" y="18.7199993134">
@@ -238,7 +238,7 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
-   <ANNOTATION label="location:comfychair">
+   <ANNOTATION label="location:comfy chair">
       <VIEWPOINT label="main">
          <POSITIONDATA frameid="map" theta="1.5330799818">
             <POINT2D x="14.3999996185" y="17.3120002747">
@@ -364,7 +364,7 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
-   <ANNOTATION label="location:livingtable">
+   <ANNOTATION label="location:living table">
       <VIEWPOINT label="main">
          <POSITIONDATA frameid="map" theta="0.0">
             <POINT2D x="11.1999998093" y="18.3360004425">
@@ -679,7 +679,7 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
-   <ANNOTATION label="location:kitchencounter">
+   <ANNOTATION label="location:kitchen counter">
       <VIEWPOINT label="main">
          <POSITIONDATA frameid="map" theta="0.0">
             <POINT2D x="18.6240005493" y="17.9839992523">

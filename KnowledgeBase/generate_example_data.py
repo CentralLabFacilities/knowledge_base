@@ -56,7 +56,7 @@ for anno in annotations:
 #<N_placementTwo> = (dinner table) | cabinet | bookshelf | (kitchen counter) | sofa | (couch table) | (side table) | (stove) | bed | closet | desk | bar;
 kitchen = Room(name='kitchen', numberofdoors='1')
 fridge = Location(name='fridge', room=kitchen, isbeacon='True')
-kitchencounter = Location(name='kitchencounter', room=kitchen, isbeacon='True')
+kitchencounter = Location(name='kitchen counter', room=kitchen, isbeacon='True')
 bar = Location(name='bar', room=kitchen, isbeacon='True')
 cabinet = Location(name='cabinet', room=kitchen, isbeacon='True')
 sink = Location(name='sink', room=kitchen, isbeacon='True')
@@ -69,10 +69,10 @@ arena_locations.append(cabinet)
 arena_locations.append(sink)
 arena_locations.append(stove)
 
-livingroom = Room(name='livingroom', numberofdoors='0')
-livingtable = Location(name='livingtable', room=livingroom)
+livingroom = Room(name='living room', numberofdoors='0')
+livingtable = Location(name='living table', room=livingroom)
 sofa = Location(name='sofa', room=livingroom)
-comfychair = Location(name='comfychair', room=livingroom)
+comfychair = Location(name='comfy chair', room=livingroom)
 arena_rooms.append(livingroom)
 arena_locations.append(livingtable)
 arena_locations.append(sofa)
@@ -109,26 +109,6 @@ objs.append(Rcobject(name="water",          category='drink', color="light blue"
 
 #Crowd-entries
 #dummys, overwritten by reportGroup
-pers.append(Person(name='michael',
-                   uuid='1',
-                   agefrom='3',
-                   ageto='5',
-                   gender="male",
-                   gesture="waving",
-                   posture="sitting",
-                   shirtcolor="blue",
-                   faceid=-1,
-                   position=Positiondata(theta=1.1, frameid="map", point2d=Point2d(x=1.2, y=3.4))))
-pers.append(Person(name='noah',
-                   uuid='0',
-                   agefrom='3',
-                   ageto='5',
-                   gender="female",
-                   gesture="waving",
-                   posture="standing",
-                   shirtcolor="green",
-                   faceid=-1,
-                   position=Positiondata(theta=1.9, frameid="map", point2d=Point2d(x=5.6, y=7.8))))
 
 ######################################################################################################################
 
