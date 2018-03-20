@@ -1,4 +1,3 @@
 db_name: apartment_database
-db_identifier: TestKBase
 copy_on_startup: True
 mongodb_port: 27018
