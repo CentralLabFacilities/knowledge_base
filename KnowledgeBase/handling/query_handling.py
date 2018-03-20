@@ -187,7 +187,7 @@ def handle_which(query):
     complex_attributes = ['room', 'location']
     attribute_of_class = query[1]
     if attribute_of_class in complex_attributes:
-        return 'Failed, such complex attributes are not supported at this moment!', 42
+        attribute_of_class += '__name'
     value = query[2]
     method_parameter_dict = {attribute_of_class : value}
     list_of_searched_bdo = class_of_bdo.objects(**method_parameter_dict)
