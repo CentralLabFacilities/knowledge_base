@@ -45,5 +45,27 @@ class Annotation(me.EmbeddedDocument):
         return root
 
     @classmethod
-    def from_xml(cls):
-        pass
+    def from_xml(cls, xml_tree):
+        anno = Annotation()
+        anno.label = xml_tree.get('label')
+
+        vps = []
+        for child in xml_tree.getchildren():
+            if child.tag == Viewpoint.get_tag().lower():
+                vps.append(Viewpoint.from_xml(child))
+            elif child.tag == 'precisepolygon':
+                points = []
+                for potential_point in child.getchildren():
+                    if potential_point.tag == Point2d.get_tag().lower():
+                        p = Point2d.from_xml(potential_point)
+                        points.append([p.x, p.y])
+                points.append(points[0])
+                anno.polygon = points
+
+        anno.viewpoints = vps
+
+        return anno
+
+    @classmethod
+    def get_tag(cls):
+        return 'ANNOTATION'
