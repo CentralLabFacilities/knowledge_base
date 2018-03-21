@@ -83,6 +83,12 @@ def handle_remember(data):
             nbdo = Rcobjects.objects()[0]
             nbdo.update(add_to_set__rcobjects=[new_obj])
         return True, 0
+    except NoSuchLocationException:
+        print('Could not find the location specified in BDO')
+        return False, 94
+    except NoSuchRoomException:
+        print('Could not find the room specified in BDO')
+        return False, 95
     except Exception:
         print('Error in converting the given xml to a BDO')
         return False, 93

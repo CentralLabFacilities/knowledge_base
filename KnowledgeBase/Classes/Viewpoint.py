@@ -1,6 +1,6 @@
 import mongoengine as me
 import xml.etree.ElementTree as ET
-from Positiondata import Positiondata
+from Positiondata import Positiondataquery
 
 
 class Viewpoint(me.EmbeddedDocument):

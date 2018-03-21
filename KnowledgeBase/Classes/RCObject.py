@@ -33,3 +33,4 @@ class Rcobject(me.Document):
     @classmethod
     def from_xml(cls):
         pass
+    #may throw no such location exception

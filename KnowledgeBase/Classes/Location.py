@@ -30,3 +30,4 @@ class Location(me.Document):
     @classmethod
     def from_xml(cls):
         pass
+    # may throw no such room exception

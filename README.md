@@ -277,6 +277,10 @@ The data storage word was not in the list of accepted or supported data storage 
    - The given XMLs basetag is not available for converting to a BDO
  - 93
    - The given XML failed to be converted to a BDO
+ - 94
+   - The BDO specified a Location that could not be found
+ - 95
+   - The BDO specified a Room that could not be found
 
 ## Todos
 * Test data retrieval after deleting
