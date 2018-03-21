@@ -1,6 +1,7 @@
 import mongoengine as me
 from Annotation import Annotation
 from Room import Room
+from Exceptions import NoSuchRoomException
 import xml.etree.ElementTree as ET
 
 
@@ -28,6 +29,23 @@ class Location(me.Document):
         return root
 
     @classmethod
-    def from_xml(cls):
-        pass
-    # may throw no such room exception
+    def from_xml(cls, xml_tree):
+        loc = Location()
+        loc.isbeacon = xml_tree.get('isbeacon')
+        loc.isplacement = xml_tree.get('isplacement')
+
+        for potential_annot in xml_tree.getchildren():
+            if potential_annot.tag == Annotation.get_tag().lower():
+                loc.annotation = Annotation.from_xml(potential_annot)
+
+        room = xml_tree.get('room')
+        room_doc = Room.objects(name=room).get()
+        if not type(room_doc) == Room:
+            raise NoSuchRoomException()
+        loc.room = room_doc
+
+        return loc
+
+    @classmethod
+    def get_tag(cls):
+        return 'LOCATION'
