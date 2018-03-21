@@ -4,8 +4,7 @@ import xml.etree.ElementTree as ET
 
 
 class Person(me.Document):
-    agefrom = me.IntField(default=0)
-    ageto = me.IntField(default=0)
+    age = me.StringField(max_length=10, default='')
     gender = me.StringField(max_length=50, default='')
     shirtcolor = me.StringField(max_length=50, default='')
     posture = me.StringField(max_length=50, default='')
@@ -20,9 +19,6 @@ class Person(me.Document):
     def to_xml(self):
         attribs = {x: self.__getattribute__(x) for x in self._fields}
         posi = attribs.pop('position')
-        aF = attribs.pop('agefrom')
-        aT = attribs.pop('ageto')
-        attribs['age'] = str(aF) + '-' + str(aT)
         attribs = {x: str(attribs[x]) for x in attribs}
 
         root = ET.Element('PERSONDATA', attrib=attribs)
@@ -47,12 +43,10 @@ class Person(me.Document):
         pers.shirtcolor = xml_tree.get('shirtcolor')
         pers.posture = xml_tree.get('posture')
         pers.gesture = xml_tree.get('gesture')
-        pers.agefrom = int(xml_tree.get('age').split('-')[0])
-        pers.ageto = int(xml_tree.get('age').split('-')[1])
+        pers.age = xml_tree.get('age')
 
         print('DEBUG: got person ' + str(vars(pers)))
         print('DEBUG: got person(2) ' + str(pers._fields))
-
 
         for potential_posi in xml_tree.getchildren():
             if potential_posi.tag == Positiondata.get_tag().lower():
