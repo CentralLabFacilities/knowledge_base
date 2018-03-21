@@ -1,6 +1,6 @@
 import mongoengine as me
 import xml.etree.ElementTree as ET
-from Positiondata import Positiondataquery
+from Positiondata import Positiondata
 
 
 class Viewpoint(me.EmbeddedDocument):
@@ -24,7 +24,11 @@ class Viewpoint(me.EmbeddedDocument):
     def from_xml(cls, xml_tree):
         vp = Viewpoint()
         vp.label = xml_tree.get('label')
-        for potential_posi in xml_tree.getchildren():
+        for potential_posi in xml_tree.getchildren().lower():
             if potential_posi.tag == Positiondata.get_tag():
                 vp.positiondata = Positiondata.from_xml(potential_posi)
         return vp
+
+    @classmethod
+    def get_tag(cls):
+        return 'VIEWPOINT'
