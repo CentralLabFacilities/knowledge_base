@@ -50,6 +50,9 @@ class Person(me.Document):
         pers.agefrom = int(xml_tree.get('age').split('-')[0])
         pers.ageto = int(xml_tree.get('age').split('-')[1])
 
+        print('DEBUG: got person ' + str(vars(pers)))
+        print('DEBUG: got person(2) ' + str(pers._fields))
+
 
         for potential_posi in xml_tree.getchildren():
             if potential_posi.tag == Positiondata.get_tag().lower():

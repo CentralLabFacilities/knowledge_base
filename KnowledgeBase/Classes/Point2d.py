@@ -23,6 +23,10 @@ class Point2d(me.EmbeddedDocument):
         posi = Point2d()
         posi.x = float(xml_tree.get('x'))
         posi.y = float(xml_tree.get('y'))
+
+        print('DEBUG: got point2d ' + str(vars(posi)))
+        print('DEBUG: got point2d(2) ' + str(posi._fields))
+
         return posi
 
 
