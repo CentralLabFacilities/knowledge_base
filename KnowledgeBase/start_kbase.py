@@ -80,6 +80,7 @@ def handle_query(req):
         ans.answer = 'Failed, bad question word for query: ' + msg
         ans.success = False
         ans.error_code = 0
+    print('Success: ' + str(ans.success) + ' Errorcode: ' + str(ans.error_code))
     return ans
 
 
@@ -101,6 +102,7 @@ def handle_data(req):
     else:
         ans.success = False
         ans.error_code = 0
+    print('Success: ' + str(ans.success) + ' Errorcode: ' + str(ans.error_code))
     return ans
 
 

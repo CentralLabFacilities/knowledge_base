@@ -263,19 +263,19 @@ The question word was not in the list of accepted or supported question words.
 The data storage word was not in the list of accepted or supported data storage words.
 
 #### Starting with 1: Forget queries
- - 11
+ - 81
    - Command was ill formatted. There was more than tree elements and the second one was not 'all'
- - 12
+ - 82
    - The specified class of which all objects should be deleted is not allowed or supported.
- - 13
+ - 83
    - There was no BDO with the specified identifier to be deleted.
    
 #### Starting with 2: Remember queries
- - 21
+ - 91
    - The given XML could not be parsed (aka was no valid xml)
- - 22
+ - 92
    - The given XMLs basetag is not available for converting to a BDO
- - 23
+ - 93
    - The given XML failed to be converted to a BDO
 
 ## Todos

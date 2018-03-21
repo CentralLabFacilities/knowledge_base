@@ -22,20 +22,20 @@ def handle_forget(data):
                  'door': Door}
         if not data[0] == 'all':
             print('More than one element for forget and first element not \"all\"')
-            return False, 11
+            return False, 81
         if data[1] not in types:
             if data[1].endswith('s') and data[1][:-1] in types:  # got plural of type, e.g. persons
                 data[1] = data[1][:-1]
             else:
                 print('Identification word not in classes allowed to delete!')
-                return False, 12
+                return False, 82
         types[data[1]].objects().delete()
         return True, 0
     else:
         obj = retrieve_object_by_identifier(data[0])
         if obj is None:
             print('No object with identifier \"' + data[0] + '\" found!')
-            return False, 13
+            return False, 83
         obj.delete()
         return True, 0
 
@@ -54,7 +54,7 @@ def handle_remember(data):
         pass
     except Exception:
         print('XML parsing not successful.')
-        return False, 21
+        return False, 91
     available_classes = {'persondata' : Person,
                'location' : Location,
                'room' : Room,
@@ -63,7 +63,7 @@ def handle_remember(data):
                }
     if xml_tree.tag not in available_classes:
         print('Class \"' + xml_tree.tag + '\" is not a valid BDO class')
-        return False, 22
+        return False, 92
     try:
         new_obj = available_classes[xml_tree.tag].from_xml(xml_tree)
         new_obj.save()
@@ -85,5 +85,5 @@ def handle_remember(data):
         return True, 0
     except Exception:
         print('Error in converting the given xml to a BDO')
-        return False, 23
+        return False, 93
 
