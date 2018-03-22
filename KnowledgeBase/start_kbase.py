@@ -35,9 +35,10 @@ mongodb_port = int(data['mongodb_port'])
 
 print('Trying to connect to mongod...')
 
-if copy_on_startup:
-    # drop the database from the previous run
-    db_run = me.connect('temp_db', host="127.0.0.1", port=mongodb_port)
+db_run = None
+
+
+def reload_database():
     db_run.drop_database('temp_db')
     # copy the blueprint db to the temporary database
     client = pymongo.MongoClient('localhost', mongodb_port)
@@ -45,8 +46,12 @@ if copy_on_startup:
                               fromdb=db_to_use_as_blueprint_name,
                               todb='temp_db')
 
+if copy_on_startup:
+    # drop the database from the previous run
+    db_run = me.connect('temp_db', host="127.0.0.1", port=mongodb_port)
+    reload_database()
 else:
-    me.connect(db_to_use_as_blueprint_name)
+    db_run = me.connect(db_to_use_as_blueprint_name, host="127.0.0.1", port=mongodb_port)
 
 print('Connected!')
 
@@ -106,10 +111,21 @@ def handle_data(req):
     return ans
 
 
+def handle_reload(req):
+    ans = ReloadResponse()
+
+    reload_database()
+    print('Reloaded KBase')
+
+    ans.success = copy_on_startup
+    return ans
+
+
 # initialize the rosnode and services
 rospy.init_node('knowledge_base')
 query_handler = rospy.Service('KBase/query', Query, handle_query)
 data_handler = rospy.Service('KBase/data', Data, handle_data)
+reload_handler = rospy.Service('KBase/reload', Reload, handle_reload)
 
 print('KBase ready!')
 rospy.spin()
