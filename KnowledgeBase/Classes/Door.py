@@ -13,7 +13,7 @@ class Door(me.Document):
         attribs = {x: self.__getattribute__(x) for x in self._fields}
         annot = attribs.pop('annotation')
         attribs.pop('id')
-        root = ET.Element('DOOR', attrib={'roomOne':attribs['roomOne'].name, 'roomTwo':attribs['roomTwo'].name})
+        root = ET.Element('DOOR', attrib={'roomone':attribs['roomone'].name, 'roomtwo':attribs['roomtwo'].name})
         root.append(annot.to_xml())
 
         gen = ET.SubElement(root, 'GENERATOR')

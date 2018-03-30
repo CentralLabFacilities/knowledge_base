@@ -104,6 +104,8 @@ def get_class_of_bdo(bdo):
         class_of_bdo = Location
     elif bdo == 'room' or bdo == 'rooms':
         class_of_bdo = Room
+    elif bdo == 'door' or bdo == 'doors':
+        class_of_bdo = Door
     return class_of_bdo
 
 

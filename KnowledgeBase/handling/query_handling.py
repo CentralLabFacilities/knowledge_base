@@ -1,6 +1,7 @@
 from Classes import *
 import xml.etree.ElementTree as ET
 from utils import retrieve_object_by_identifier, get_class_of_bdo
+from mongoengine.queryset.visitor import Q
 
 def str_to_xml(str):
     # TODO: rewrite proper
@@ -187,15 +188,25 @@ def handle_which(query):
     complex_attributes = ['room', 'location']
     attribute_of_class = query[1]
     value = query[2]
+    advanced_query = None
     if attribute_of_class in complex_attributes:
         rloc_class = None
         if attribute_of_class == 'room':
             rloc_class = Room
-        else:
+            value = rloc_class.objects(name=value).get()
+            if class_of_bdo == Door:
+                rloc_class = Door
+                advanced_query = Q(roomone=value) or Q(roomtwo=value)
+        elif attribute_of_class == 'location':
             rloc_class = Location
-        value = rloc_class.objects(name=value).get()
+            value = rloc_class.objects(name=value).get()
     method_parameter_dict = {attribute_of_class : value}
-    list_of_searched_bdo = class_of_bdo.objects(**method_parameter_dict)
+    if not advanced_query:
+        list_of_searched_bdo = class_of_bdo.objects(**method_parameter_dict)
+    else:
+        list_of_searched_bdo = class_of_bdo.objects(advanced_query)
+
+
     # prepare root node for list
     root_node = None
     if class_of_bdo == Person:
@@ -206,6 +217,8 @@ def handle_which(query):
         root_node = ET.Element('ROOMLIST')
     elif class_of_bdo == Location:
         root_node = ET.Element('LOCATIONLIST')
+    elif class_of_bdo == Door:
+        root_node = ET.Element('DOORLIST')
 
     for obj in list_of_searched_bdo:
         root_node.append(obj.to_xml())
