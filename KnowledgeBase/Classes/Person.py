@@ -49,6 +49,6 @@ class Person(me.Document):
         print('DEBUG: got person(2) ' + str(pers._fields))
 
         for potential_posi in xml_tree.getchildren():
-            if potential_posi.tag == Positiondata.get_tag().lower():
+            if potential_posi.tag.lower() == Positiondata.get_tag().lower():
                 pers.position = Positiondata.from_xml(potential_posi)
         return pers

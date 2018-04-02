@@ -35,7 +35,7 @@ class Location(me.Document):
         loc.isplacement = xml_tree.get('isplacement')
 
         for potential_annot in xml_tree.getchildren():
-            if potential_annot.tag == Annotation.get_tag().lower():
+            if potential_annot.tag.lower() == Annotation.get_tag().lower():
                 loc.annotation = Annotation.from_xml(potential_annot)
 
         room = xml_tree.get('room')

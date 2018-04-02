@@ -51,12 +51,12 @@ class Annotation(me.EmbeddedDocument):
 
         vps = []
         for child in xml_tree.getchildren():
-            if child.tag == Viewpoint.get_tag().lower():
+            if child.tag.lower() == Viewpoint.get_tag().lower():
                 vps.append(Viewpoint.from_xml(child))
-            elif child.tag == 'precisepolygon':
+            elif child.tag.lower() == 'precisepolygon':
                 points = []
                 for potential_point in child.getchildren():
-                    if potential_point.tag == Point2d.get_tag().lower():
+                    if potential_point.tag.lower() == Point2d.get_tag().lower():
                         p = Point2d.from_xml(potential_point)
                         points.append([p.x, p.y])
                 points.append(points[0])

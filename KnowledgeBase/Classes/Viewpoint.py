@@ -24,8 +24,8 @@ class Viewpoint(me.EmbeddedDocument):
     def from_xml(cls, xml_tree):
         vp = Viewpoint()
         vp.label = xml_tree.get('label')
-        for potential_posi in xml_tree.getchildren().lower():
-            if potential_posi.tag == Positiondata.get_tag():
+        for potential_posi in xml_tree.getchildren():
+            if potential_posi.tag.lower() == Positiondata.get_tag().lower():
                 vp.positiondata = Positiondata.from_xml(potential_posi)
         return vp
 

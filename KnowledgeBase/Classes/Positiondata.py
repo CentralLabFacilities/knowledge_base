@@ -28,11 +28,9 @@ class Positiondata(me.EmbeddedDocument):
         posi.frameid = xml_tree.get('frameid')
         posi.theta = float(xml_tree.get('theta'))
 
-        print('DEBUG: got positiondata ' + str(vars(posi)))
-        print('DEBUG: got positiondata(2) ' + str(posi._fields))
 
         for potential_poi in xml_tree.getchildren():
-            if potential_poi.tag == Point2d.get_tag().lower():
+            if potential_poi.tag.lower() == Point2d.get_tag().lower():
                 posi.point2d = Point2d.from_xml(potential_poi)
         return posi
 
