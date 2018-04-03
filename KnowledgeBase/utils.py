@@ -61,7 +61,7 @@ def add_annotation(arenaobj, annotations_xml):
         xml_identifier = arenaobj.name
     elif type(arenaobj) is Door:
         loc_type = 'door'
-        xml_identifier = arenaobj.roomOne.name + '_' + arenaobj.roomTwo.name
+        xml_identifier = arenaobj.roomone.name + '_' + arenaobj.roomtwo.name
 
     annot = Annotation()
     annot.label = xml_identifier

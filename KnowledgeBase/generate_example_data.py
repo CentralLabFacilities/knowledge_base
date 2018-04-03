@@ -54,7 +54,7 @@ for anno in annotations:
 
 #Arena-entries (locations, rooms etc)
 #<N_placementTwo> = (dinner table) | cabinet | bookshelf | (kitchen counter) | sofa | (couch table) | (side table) | (stove) | bed | closet | desk | bar;
-kitchen = Room(name='kitchen', numberofdoors='1')
+kitchen = Room(name='kitchen', numberofdoors='2')
 fridge = Location(name='fridge', room=kitchen, isbeacon='True')
 kitchencounter = Location(name='kitchen counter', room=kitchen, isbeacon='True')
 bar = Location(name='bar', room=kitchen, isbeacon='True')
@@ -69,7 +69,7 @@ arena_locations.append(cabinet)
 arena_locations.append(sink)
 arena_locations.append(stove)
 
-livingroom = Room(name='living room', numberofdoors='0')
+livingroom = Room(name='living room', numberofdoors='2')
 livingtable = Location(name='living table', room=livingroom)
 sofa = Location(name='sofa', room=livingroom)
 comfychair = Location(name='comfy chair', room=livingroom)
@@ -78,13 +78,25 @@ arena_locations.append(livingtable)
 arena_locations.append(sofa)
 arena_locations.append(comfychair)
 
-corridor = Room(name='corridor', numberofdoors='3')
+corridor = Room(name='corridor', numberofdoors='4')
 arena_rooms.append(corridor)
 
 bathroom = Room(name='bathroom', numberofdoors='1')
 arena_rooms.append(bathroom)
 
-outside = Room(name='outside', numberofdoors='0')
+outside = Room(name='outside', numberofdoors='1')
+arena_rooms.append(outside)
+
+d_outside_corridor = Door(roomone=outside, roomtwo=corridor)
+arena_doors.append(d_outside_corridor)
+d_bathroom_corridor = Door(roomone=bathroom, roomtwo=corridor)
+arena_doors.append(d_bathroom_corridor)
+d_corridor_kitchen = Door(roomone=corridor, roomtwo=kitchen)
+arena_doors.append(d_corridor_kitchen)
+d_corridor_livingroom = Door(roomone=corridor, roomtwo=livingroom)
+arena_doors.append(d_corridor_livingroom)
+d_kitchen_livingroom = Door(roomone=kitchen, roomtwo=livingroom)
+arena_doors.append(d_kitchen_livingroom)
 
 #Objects-Entries
 #categorys:
