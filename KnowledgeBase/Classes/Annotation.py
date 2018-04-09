@@ -60,7 +60,7 @@ class Annotation(me.EmbeddedDocument):
                         p = Point2d.from_xml(potential_point)
                         points.append([p.x, p.y])
                 points.append(points[0])
-                anno.polygon = points
+                anno.polygon = [points]
 
         anno.viewpoints = vps
 
