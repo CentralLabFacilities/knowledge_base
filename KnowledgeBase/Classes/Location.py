@@ -31,6 +31,7 @@ class Location(me.Document):
     @classmethod
     def from_xml(cls, xml_tree):
         loc = Location()
+        loc.name = xml_tree.get('name')
         loc.isbeacon = xml_tree.get('isbeacon') == 'true'
         loc.isplacement = xml_tree.get('isplacement') == 'true'
 
