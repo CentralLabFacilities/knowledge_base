@@ -31,8 +31,8 @@ class Location(me.Document):
     @classmethod
     def from_xml(cls, xml_tree):
         loc = Location()
-        loc.isbeacon = xml_tree.get('isbeacon')
-        loc.isplacement = xml_tree.get('isplacement')
+        loc.isbeacon = xml_tree.get('isbeacon') == 'true'
+        loc.isplacement = xml_tree.get('isplacement') == 'true'
 
         for potential_annot in xml_tree.getchildren():
             if potential_annot.tag.lower() == Annotation.get_tag().lower():

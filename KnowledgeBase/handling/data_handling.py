@@ -92,6 +92,6 @@ def handle_remember(data):
         return False, 95
     except Exception:
         print('Error in converting the given xml to a BDO')
-        print('Exact Exception: ' + sys.exc_info()[0])
+        print('Exact Exception: ' + str(sys.exc_info()[0]))
         return False, 93
 
