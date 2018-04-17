@@ -100,11 +100,15 @@ def handle_where(query):
         annot = entry.location.annotation
 
     # retrieve viewpoint
-    viewpoint = None
+    viewpoints = None
     if viewpoint_name:
-        viewpoint = [vp for vp in annot.viewpoints if vp.label == viewpoint_name][0]
+        viewpoints = [vp for vp in annot.viewpoints if vp.label == viewpoint_name]
     else:
-        viewpoint = [vp for vp in annot.viewpoints if vp.label == 'main'][0]
+        viewpoints = [vp for vp in annot.viewpoints if vp.label == 'main']
+    if not viewpoints:
+        return 'Failed! Found no viewpoint with name ' + str(viewpoint_name), 21
+    
+    viewpoint = viewpoints[0]
 
     return ET.tostring(viewpoint.to_xml()), 0
 
