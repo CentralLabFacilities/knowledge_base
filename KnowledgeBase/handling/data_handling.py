@@ -68,21 +68,33 @@ def handle_remember(data):
         return False, 92
     try:
         new_obj = available_classes[xml_tree.tag].from_xml(xml_tree)
+
+        # check for old object with name and delete if possible
+        old_obj = retrieve_object_by_identifier(new_obj.name)
+        if old_obj is not None:
+            print('There already was a ' + xml_tree.tag + ' with name ' + str(new_obj.name) + ', but it was deleted during this insertion.')
+            old_obj.delete()
+
         new_obj.save()
         if type(new_obj) == Person:
             nbdo = Crowd.objects()[0]
+            nbdo.update(pull__persons=old_obj)
             nbdo.update(add_to_set__persons=[new_obj])
         elif type(new_obj) == Location:
             nbdo = Arena.objects()[0]
+            nbdo.update(pull__locations=old_obj)
             nbdo.update(add_to_set__locations=[new_obj])
         elif type(new_obj) == Room:
             nbdo = Arena.objects()[0]
+            nbdo.update(pull__rooms=old_obj)
             nbdo.update(add_to_set__rooms=[new_obj])
         elif type(new_obj) == Door:
             nbdo = Arena.objects()[0]
+            nbdo.update(pull__doors=old_obj)
             nbdo.update(add_to_set__doors=[new_obj])
         elif type(new_obj) == Rcobject:
             nbdo = Rcobjects.objects()[0]
+            nbdo.update(pull__rcobjects=old_obj)
             nbdo.update(add_to_set__rcobjects=[new_obj])
         return True, 0
     except NoSuchLocationException:
