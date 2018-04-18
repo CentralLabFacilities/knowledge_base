@@ -16,8 +16,12 @@ class Rcobject(me.Document):
     def to_xml(self):
         attribs = {x: self.__getattribute__(x) for x in self._fields}
         location = attribs.pop('location')
-        attribs['room'] = location.room.name
-        attribs['location'] = location.name
+        if location is not None:
+            attribs['room'] = location.room.name
+            attribs['location'] = location.name
+        else:
+            attribs['room'] = ''
+            attribs['location'] = ''
         attribs['graspdifficulty'] = '0'
         attribs.pop('id')
         attribs = {x: str(attribs[x]) for x in attribs}
@@ -33,4 +37,4 @@ class Rcobject(me.Document):
     @classmethod
     def from_xml(cls):
         pass
-    #may throw no such location exception
+        # may throw no such location exception
