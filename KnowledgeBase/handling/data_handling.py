@@ -72,7 +72,7 @@ def handle_remember(data):
         # check for old object with name and delete if possible
         old_obj = retrieve_object_by_identifier(new_obj.name)
         if old_obj is not None:
-            print('There already was a ' + xml_tree.tag + ' with name ' + str(new_obj.name) + ', but it was deleted during this insertion.')
+            print('There already was a ' + xml_tree.tag + ' with name "' + str(new_obj.name) + '", but it was overwritten.')
             old_obj.delete()
 
         new_obj.save()
