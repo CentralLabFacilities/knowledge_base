@@ -2,12 +2,14 @@ from Classes import *
 import xml.etree.ElementTree as ET
 from utils import retrieve_object_by_identifier, get_class_of_bdo
 import sys
+import traceback
 
 
 def handle_forget(data):
     '''
     Hander for the data word forget. Will delete a bdo from the knowledge base.
     :param data:
+    :param delete_references
     :return:
     '''
     # data is list with one or two elements. if it is of length one, it will contain the unique identifier of the bdo
@@ -38,6 +40,26 @@ def handle_forget(data):
             print('No object with identifier \"' + data[0] + '\" found!')
             return False, 83
         obj.delete()
+        if type(obj) == Person:
+            nbdo = Crowd.objects()[0]
+            nbdo.update(pull__persons=obj)
+        elif type(obj) == Location:
+            nbdo = Arena.objects()[0]
+            nbdo.update(pull__locations=obj)
+            rcobjects = Rcobject.objects(location=obj)
+            for each in rcobjects:
+                each.location = None
+                each.save()
+        elif type(obj) == Room:
+            nbdo = Arena.objects()[0]
+            nbdo.update(pull__rooms=obj)
+            # TODO remove reference from doors and locations
+        elif type(obj) == Door:
+            nbdo = Arena.objects()[0]
+            nbdo.update(pull__doors=obj)
+        elif type(obj) == Rcobject:
+            nbdo = Rcobjects.objects()[0]
+            nbdo.update(pull__rcobjects=obj)
         return True, 0
 
 
@@ -67,6 +89,19 @@ def handle_remember(data):
         return False, 92
     try:
         new_obj = available_classes[xml_tree.tag].from_xml(xml_tree)
+
+        # check for old object with name and delete if possible
+        old_obj = retrieve_object_by_identifier(new_obj.name)
+        if old_obj is not None:
+            print('There already was a ' + xml_tree.tag + ' with name "' + str(new_obj.name) + '", but it was overwritten.')
+            if type(new_obj) == type(old_obj):
+                # just update the object
+                old_obj._fields = new_obj._fields
+                old_obj.save()
+                return True, 0
+            else:
+                handle_forget([new_obj.name])
+
         new_obj.save()
         if type(new_obj) == Person:
             nbdo = Crowd.objects()[0]
@@ -92,6 +127,6 @@ def handle_remember(data):
         return False, 95
     except Exception:
         print('Error in converting the given xml to a BDO')
-        print('Exact Exception: ' + sys.exc_info()[0])
+        print('Exact Exception: ' + str(traceback.format_exc()))
         return False, 93
 
