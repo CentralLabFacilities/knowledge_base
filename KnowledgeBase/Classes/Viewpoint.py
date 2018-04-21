@@ -32,3 +32,8 @@ class Viewpoint(me.EmbeddedDocument):
     @classmethod
     def get_tag(cls):
         return 'VIEWPOINT'
+
+    def __str__(self):
+        label_str = 'label : "' + str(self.label) + '"'
+        position_str = 'positiondata: ' + str(self.positiondata)
+        return label_str + '; ' + position_str

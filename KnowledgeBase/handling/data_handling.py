@@ -1,7 +1,6 @@
 from Classes import *
 import xml.etree.ElementTree as ET
-from utils import retrieve_object_by_identifier, get_class_of_bdo
-import sys
+from utils import retrieve_object_by_identifier, get_class_of_bdo, debug_print
 import traceback
 
 
@@ -96,8 +95,24 @@ def handle_remember(data):
             print('There already was a ' + xml_tree.tag + ' with name "' + str(new_obj.name) + '", but it was overwritten.')
             if type(new_obj) == type(old_obj):
                 # just update the object
-                old_obj._fields = new_obj._fields
-                old_obj.save()
+                attribs_new = {x: new_obj.__getattribute__(x) for x in new_obj._fields}
+                attribs_old = {x: old_obj.__getattribute__(x) for x in old_obj._fields}
+                attribs_new.pop('id')
+                modify_query = {}
+                debug_print('New attribs: ' + str(attribs_new))
+                debug_print('Old attribs: ' + str(attribs_old))
+                bla = attribs_new['annotation'].viewpoints
+                debug_print('viewpoint theta new: ' + str(bla[0].positiondata.theta))
+                for attrib in attribs_new:
+                    modify_query['set__' + attrib] = attribs_new[attrib]
+                debug_print('query: ' + str(modify_query))
+                old_obj.update(**modify_query)
+
+                old_obj.reload()
+                attribs_old = {x: old_obj.__getattribute__(x) for x in old_obj._fields}
+                bla = attribs_old['annotation'].viewpoints
+                debug_print('viewpoint theta old, updated: ' + str(bla[0].positiondata.theta))
+
                 return True, 0
             else:
                 handle_forget([new_obj.name])

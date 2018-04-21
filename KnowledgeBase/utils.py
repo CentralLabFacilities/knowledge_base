@@ -1,5 +1,6 @@
 from Classes import *
 
+debug = False
 
 def retrieve_object_by_identifier(name):
     '''
@@ -162,3 +163,12 @@ def reduce_query(query_string, accepted_w_words):
     # smarter way for future: create a sentence-metric with which you could determine the kind of question given (1) and
     # also which parts are most likely important compounds, e.g. a persons first and sir name (2)
     return query_list
+
+def debug_print(string):
+    '''
+    Prints a string if the global variable debug is set to True
+    :param string: What shall be printed
+    :return: None
+    '''
+    if debug:
+        print(string)

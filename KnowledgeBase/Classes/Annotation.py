@@ -69,3 +69,11 @@ class Annotation(me.EmbeddedDocument):
     @classmethod
     def get_tag(cls):
         return 'ANNOTATION'
+
+    def __str__(self):
+        label_str = 'label : "' + str(self.label) + '"'
+        viewpoints_str = 'viewpoints: '
+        for vp in self.viewpoints:
+            viewpoints_str += str(vp)
+        polygon_str = 'polygon: ' + str(self.polygon)
+        return label_str + '; ' + viewpoints_str + '; ' + polygon_str

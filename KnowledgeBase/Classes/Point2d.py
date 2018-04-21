@@ -26,7 +26,9 @@ class Point2d(me.EmbeddedDocument):
 
         return posi
 
-
     @classmethod
     def get_tag(cls):
         return 'POINT2D'
+
+    def __str__(self):
+        return 'x: ' + str(self.x) + ', y: ' + str(self.y)
