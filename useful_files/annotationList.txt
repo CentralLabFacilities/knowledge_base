@@ -1,14 +1,14 @@
 room:corridor
 	main
-	inspection start
+	inspection_start
 	view0
 	view1
 	view2
 room:living room
 	main
-	party area
-	inspection point
-	help me carry start
+	party_area
+	inspection_point
+	help_me_carry_start
 	view0
 	view1
 	view2
@@ -16,8 +16,8 @@ room:living room
 	view4
 room:kitchen
 	main
-	cocktail party start
-	gpsr start
+	cocktail_party_start
+	gpsr_start
 	view0
 	view1
 room:bath room
@@ -29,17 +29,17 @@ room:outside
 	view0
 door:corridor_living room
 	main
-	living room
+	living_room
 	corridor
-	gpsr start
+	gpsr_start
 door:kitchen_living room
 	main
-	living room
+	living_room
 	kitchen
 door:bath room_living room
 	main
-	living room
-	bath room
+	living_room
+	bath_room
 door:corridor_outside
 	main
 	corridor

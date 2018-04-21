@@ -22,7 +22,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="inspection start">
+      <VIEWPOINT label="inspection_start">
          <POSITIONDATA frameid="map" theta="1.57079994678">
             <POINT2D x="22.6000003815" y="2.5">
                <GENERATOR>Kbase</GENERATOR>
@@ -225,7 +225,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="party area">
+      <VIEWPOINT label="party_area">
          <POSITIONDATA frameid="map" theta="1.89254999161">
             <POINT2D x="21.7000007629" y="8.55000019073">
                <GENERATOR>Kbase</GENERATOR>
@@ -246,7 +246,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="inspection point">
+      <VIEWPOINT label="inspection_point">
          <POSITIONDATA frameid="map" theta="3.11034989357">
             <POINT2D x="22.2000007629" y="7.90000009537">
                <GENERATOR>Kbase</GENERATOR>
@@ -267,7 +267,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="help me carry start">
+      <VIEWPOINT label="help_me_carry_start">
          <POSITIONDATA frameid="map" theta="3.05486011505">
             <POINT2D x="22.2000007629" y="7.84999990463">
                <GENERATOR>Kbase</GENERATOR>
@@ -547,7 +547,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="cocktail party start">
+      <VIEWPOINT label="cocktail_party_start">
          <POSITIONDATA frameid="map" theta="2.49052000046">
             <POINT2D x="24.0499992371" y="7.84999990463">
                <GENERATOR>Kbase</GENERATOR>
@@ -568,7 +568,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="gpsr start">
+      <VIEWPOINT label="gpsr_start">
          <POSITIONDATA frameid="map" theta="-2.77442002296">
             <POINT2D x="24.8999996185" y="8.69999980927">
                <GENERATOR>Kbase</GENERATOR>
