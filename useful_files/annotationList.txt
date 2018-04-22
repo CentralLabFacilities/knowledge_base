@@ -3,7 +3,7 @@ room:corridor
 	inspection_start
 	view0
 	view1
-	view2
+	view2 	[only clf]
 room:living room
 	main
 	party_area
@@ -13,13 +13,13 @@ room:living room
 	view1
 	view2
 	view3
-	view4
+	view4    [only clf]
 room:kitchen
 	main
 	cocktail_party_start
 	gpsr_start
 	view0
-	view1
+	view1	[only clf]
 room:bath room
 	main
 	view0
@@ -29,17 +29,17 @@ room:outside
 	view0
 door:corridor_living room
 	main
-	living_room
+	living room
 	corridor
 	gpsr_start
 door:kitchen_living room
 	main
-	living_room
+	living room
 	kitchen
 door:bath room_living room
 	main
-	living_room
-	bath_room
+	living room
+	bath room
 door:corridor_outside
 	main
 	corridor
