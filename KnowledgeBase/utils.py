@@ -97,6 +97,8 @@ def add_annotation(arenaobj, annotations_xml):
             if not vp_main:
                 print('ViewPoint \'main\' from ' + xml_identifier + ' is missing.')
     annot.viewpoints = vps
+    if not vps:
+        print('Annotation with label "' + annot.label + '" could not be set!')
     arenaobj.annotation = annot
     return arenaobj
 
