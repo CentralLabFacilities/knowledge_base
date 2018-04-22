@@ -9,6 +9,7 @@ room:living room
 	party_area
 	inspection_point
 	help_me_carry_start
+	gpsr_start
 	view0
 	view1
 	view2
@@ -31,7 +32,6 @@ door:corridor_living room
 	main
 	living room
 	corridor
-	gpsr_start
 door:kitchen_living room
 	main
 	living room
