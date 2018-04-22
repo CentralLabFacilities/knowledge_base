@@ -35,10 +35,16 @@ def filter_fillwords(query):
 
 def save_complete_db(kbase):
     for room in kbase.arena.rooms:
+        for viewpoint in room.annotation.viewpoints:
+            viewpoint.save()
         room.save()
     for location in kbase.arena.locations:
+        for viewpoint in location.annotation.viewpoints:
+            viewpoint.save()
         location.save()
     for door in kbase.arena.doors:
+        for viewpoint in door.annotation.viewpoints:
+            viewpoint.save()
         door.save()
     for obj in kbase.rcobjects.rcobjects:
         obj.save()
