@@ -86,6 +86,7 @@ def handle_query(req):
         ans.success = False
         ans.error_code = 0
     print('Success: ' + str(ans.success) + ' Errorcode: ' + str(ans.error_code))
+    utils.debug_print(ans.answer)
     return ans
 
 

@@ -34,7 +34,11 @@ class Positiondata(me.EmbeddedDocument):
                 posi.point2d = Point2d.from_xml(potential_poi)
         return posi
 
-
     @classmethod
     def get_tag(cls):
         return 'POSITIONDATA'
+
+    def __str__(self):
+        selfvalues = 'frameid: ' + str(self.frameid) + '; theta: ' + str(self.theta)
+        point_str = 'point2d: ' + str(self.point2d)
+        return selfvalues + '; ' + point_str
