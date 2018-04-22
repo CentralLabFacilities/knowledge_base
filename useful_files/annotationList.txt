@@ -3,7 +3,7 @@ room:corridor
 	inspection_start
 	view0
 	view1
-	view2 			[only clf]
+	view2 			[clf only]
 room:living room
 	main
 	party_area
@@ -14,13 +14,13 @@ room:living room
 	view1
 	view2
 	view3
-	view4    		[only clf]
+	view4    		[clf only]
 room:kitchen
 	main
 	cocktail_party_start
 	gpsr_start
 	view0
-	view1			[only clf]
+	view1			[clf only]
 room:bath room
 	main
 	view0
@@ -43,7 +43,7 @@ door:bath room_living room      [clf only]
 door:bath room_corridor	        [csra only]
 	main			[csra only]
 	corridor		[csra only]
-	bath room		[csra only]
+	bath room	 	[csra only]
 door:corridor_outside
 	main
 	corridor
@@ -66,5 +66,3 @@ location:cabinet
 	main
 location:bar
 	main
-
-
