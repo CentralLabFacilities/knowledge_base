@@ -40,6 +40,10 @@ door:bath room_living room      [clf only]
 	main			[clf only]
 	living room		[clf only]
 	bath room		[clf only]
+door:bath room_corridor	        [csra only]
+	main			[csra only]
+	corridor		[csra only]
+	bath room		[csra only]
 door:corridor_outside
 	main
 	corridor
