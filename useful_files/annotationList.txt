@@ -7,7 +7,7 @@ room:corridor
 room:living room
 	main
 	party_area
-	inspection_point
+	inspection_start
 	help_me_carry_start
 	gpsr_start		[should be there; is missing in clf and csra currently]
 	view0
