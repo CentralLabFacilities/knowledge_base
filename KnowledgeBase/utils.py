@@ -1,6 +1,6 @@
 from Classes import *
 
-debug = False
+debug = True
 
 def retrieve_object_by_identifier(name):
     '''
@@ -136,6 +136,7 @@ def reduce_query(query_string, accepted_w_words):
     names += [x.name for x in Location.objects()]
     names += [x.name for x in Room.objects()]
     names += [x.name for x in Person.objects()]
+    names += [x.label for x in Viewpoint.objects()]
 
     # check if the query contains any of those names
     # if yes, replace them with a version where all ' ' are replaced with '%'

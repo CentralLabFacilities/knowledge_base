@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from Positiondata import Positiondata
 
 
-class Viewpoint(me.EmbeddedDocument):
+class Viewpoint(me.Document):
     label = me.StringField(max_length=100, default='')
     positiondata = me.EmbeddedDocumentField(Positiondata)
 

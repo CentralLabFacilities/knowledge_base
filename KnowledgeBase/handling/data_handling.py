@@ -102,7 +102,6 @@ def handle_remember(data):
                 debug_print('New attribs: ' + str(attribs_new))
                 debug_print('Old attribs: ' + str(attribs_old))
                 bla = attribs_new['annotation'].viewpoints
-                debug_print('viewpoint theta new: ' + str(bla[0].positiondata.theta))
                 for attrib in attribs_new:
                     modify_query['set__' + attrib] = attribs_new[attrib]
                 debug_print('query: ' + str(modify_query))
