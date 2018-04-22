@@ -9,7 +9,7 @@ room:living room
 	party_area
 	inspection_point
 	help_me_carry_start
-	gpsr_start
+	gpsr_start		[forgot in csra]
 	view0
 	view1
 	view2
