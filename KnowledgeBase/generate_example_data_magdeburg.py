@@ -112,23 +112,37 @@ arena_doors.append(d_outside_bedroom)
 #Objects-Entries
 #categorys:
 #container, food, cleaning stuff, drink, cutlery, snack
-objs.append(Rcobject(name="basket",         category='container', color="green",             location=kitchentable, shape="rectangular", size='4', weight='2'))
-objs.append(Rcobject(name="cereals",        category='food', color="green and red",          location=kitchentable, shape="boxy", size='2', weight='1'))
-objs.append(Rcobject(name="cloth",          category='cleaning stuff', color="yellow green or blue",  location=cabinet, shape="quite flat", size='4', weight='1'))
-objs.append(Rcobject(name="coconut milk",     category='drink', color="green and white",            location=bar, shape="cylindrical", size='2', weight='5'))
-objs.append(Rcobject(name="coke",           category='drink', color="red",                   location=bar, shape="cylindrical", size='2', weight='4'))
-objs.append(Rcobject(name="cornflakes",     category='food', color="green white and red",    location=kitchentable, shape="boxy", size='2', weight='1'))
-objs.append(Rcobject(name="noodles",        category='food', color="yellow and black",       location=kitchentable, shape="baggy", size='1', weight='1'))
-objs.append(Rcobject(name="orange drink",   category='drink', color="blue and orange",       location=bar, shape="boxy", size='1', weight='3'))
-objs.append(Rcobject(name="peas",           category='food', color="green and black",        location=kitchentable, shape="cylindrical", size='1', weight='3'))
-objs.append(Rcobject(name="plate",          category='cutlery', color="white",             location=cabinet, shape="that of a flat bowl", size='4', weight='1'))
-objs.append(Rcobject(name="pringles",       category='snack', color="yellow",                location=kitchentable, shape="cylindrical", size='4', weight='3'))
-objs.append(Rcobject(name="red bowl",       category='container', color="red",               location=kitchentable, shape="that of a deep plate", size='2', weight='2'))
-objs.append(Rcobject(name="salt",           category='food', color="black and blue",         location=kitchentable, shape="cylindrical", size='0', weight='2'))
-objs.append(Rcobject(name="soap",         category='cleaning stuff', color="light green",  location=sink, shape="rather boxy", size='2', weight='2'))
-objs.append(Rcobject(name="sponge",         category='cleaning stuff', color="light green",  location=sink, shape="rather boxy", size='0', weight='1'))
-objs.append(Rcobject(name="tomato pasta",   category='food', color="red and green",          location=kitchentable, shape="that of a toothpaste tube", size='2', weight='2'))
-objs.append(Rcobject(name="water",          category='drink', color="light blue",            location=bar, shape="cylindrical", size='2', weight='5'))
+objs.append(Rcobject(name="shower gel",         category='care', color="pink",             location=bookcase, shape="smooth", size='2', weight='3'))
+objs.append(Rcobject(name="soap",         category='care', color="white",             location=bookcase, shape="rectangular", size='1', weight='1'))
+objs.append(Rcobject(name="toothpaste",         category='care', color="green",             location=bookcase, shape="like a tube", size='2', weight='1'))
+
+objs.append(Rcobject(name="sponge",         category='cleaning stuff', color="yellow and green",             location=kitchencabinet, shape="boxy", size='1', weight='0'))
+objs.append(Rcobject(name="wiper",         category='cleaning stuff', color="yellow",             location=kitchencabinet, shape="flat", size='3', weight='0'))
+
+objs.append(Rcobject(name="tray",         category='container', color="white",             location=cupboard, shape="boxy", size='4', weight='2'))
+objs.append(Rcobject(name="box",         category='container', color="yellow and white",             location=cupboard, shape="boxy", size='4', weight='2'))
+
+objs.append(Rcobject(name="cacao",         category='drinks', color="brown",             location=kitchentable, shape="boxy", size='4', weight='8'))
+objs.append(Rcobject(name="coke",         category='drinks', color="red",             location=kitchentable, shape="cylindrical", size='2', weight='3'))
+objs.append(Rcobject(name="malz",         category='drinks', color="black and red",             location=kitchentable, shape="like a bottle", size='3', weight='5'))
+objs.append(Rcobject(name="mixdrink",         category='drinks', color="red and yellow",             location=kitchentable, shape="cylindrical", size='2', weight='3'))
+objs.append(Rcobject(name="orange juice",         category='drinks', color="orange",             location=kitchentable, shape="like a stepped upon bottle", size='2', weight='3'))
+objs.append(Rcobject(name="peppermint tea",         category='drinks', color="gren and white",             location=kitchentable, shape="boxy", size='3', weight='1'))
+objs.append(Rcobject(name="water",         category='drinks', color="blue and see through",             location=kitchentable, shape="like a bottle", size='3', weight='5'))
+
+objs.append(Rcobject(name="cookies",         category='snacks', color="light blue",             location=couchtable, shape="rectangular", size='3', weight='3'))
+objs.append(Rcobject(name="fruit bar",         category='snacks', color="green and red",             location=couchtable, shape="rectangular", size='2', weight='1'))
+objs.append(Rcobject(name="kinder joy",         category='snacks', color="red and white",             location=couchtable, shape="rectangular", size='1', weight='1'))
+objs.append(Rcobject(name="nuts",         category='snacks', color="yellow and purple",             location=couchtable, shape="rectangular", size='2', weight='1'))
+
+objs.append(Rcobject(name="apple",         category='food', color="green",             location=cabinet, shape="rectangular", size='2', weight='2'))
+objs.append(Rcobject(name="green paprika",         category='food', color="green",             location=cabinet, shape="rectangular", size='2', weight='2'))
+objs.append(Rcobject(name="kiwi",         category='food', color="brownish green",             location=cabinet, shape="rectangular", size='1', weight='1'))
+objs.append(Rcobject(name="lemon",         category='food', color="yellow",             location=cabinet, shape="rectangular", size='1', weight='1'))
+objs.append(Rcobject(name="noodles",         category='food', color="yellow and green",             location=cabinet, shape="rectangular", size='3', weight='5'))
+objs.append(Rcobject(name="pepper",         category='food', color="black",             location=cabinet, shape="rectangular", size='2', weight='1'))
+objs.append(Rcobject(name="salt",         category='food', color="white and blue",             location=cabinet, shape="rectangular", size='2', weight='5'))
+objs.append(Rcobject(name="tomato paste",         category='food', color="red and green",             location=cabinet, shape="rectangular", size='2', weight='2'))
 
 #Crowd-entries
 #dummys, overwritten by reportGroup
