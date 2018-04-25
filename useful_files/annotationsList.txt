@@ -1,68 +1,79 @@
-room:corridor
+room:dining room
 	main
-	inspection_start
-	view0
-	view1
-	view2 			[clf only]
+	viewx
 room:living room
 	main
-	party_area
-	inspection_start
-	help_me_carry_start
-	gpsr_start		[should be there; is missing in clf and csra currently]
-	view0
-	view1
-	view2
-	view3
-	view4    		[clf only]
+	viewx
 room:kitchen
 	main
-	cocktail_party_start
-	gpsr_start
-	view0
-	view1			[clf only]
-room:bath room
+	viewx
+	inspection_point
+room:bedroom
 	main
-	view0
+	viewx
 room:outside
 	main
-	exit
-	view0
-door:corridor_living room
+	viewx
+        exit
+	inspection_start
+	inspection_end
+door:dining room_bedroom
 	main
-	living room
-	corridor
-door:kitchen_living room
+	dining room
+	bedroom
+door:bedroom_outside
 	main
-	living room
-	kitchen
-door:bath room_living room      [clf only]
-	main			[clf only]
-	living room		[clf only]
-	bath room		[clf only]
-door:bath room_corridor	        [csra only]
-	main			[csra only]
-	corridor		[csra only]
-	bath room	 	[csra only]
-door:corridor_outside
-	main
-	corridor
+	bedroom
 	outside
-location:living table
+door:dining room_outside        
+	main			
+	dining room		
+	outside		
+location:bed
 	main
-location:sofa
+	viewx
+location:desk
 	main
-location:comfy chair
+	graspx
+location:bookcase
 	main
-location:fridge
+	graspx
+location:bedside table
 	main
-location:kitchen counter
+	graspx
+location:dining table
 	main
-location:sink
-	main
-location:stove
-	main
+	graspx
+	viewx
 location:cabinet
 	main
+	graspx
+location:display case
+	main
+	graspx
+location:storage shelf
+	main
+	graspx
+location:sink
+	main
+location:kitchen table
+	main
+	graspx
+location:kitchen cabinet
+	main
+	graspx
 location:bar
+	main
+	viewx
+	graspx
+location:tv table
+	main
+	graspx
+location:cupboard
+	main
+	graspx
+location:couch table
+	main
+	graspx
+location:couch
 	main

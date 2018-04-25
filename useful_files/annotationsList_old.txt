@@ -1,0 +1,68 @@
+room:corridor
+	main
+	inspection_start
+	view0
+	view1
+	view2 			[clf only]
+room:living room
+	main
+	party_area
+	inspection_start
+	help_me_carry_start
+	gpsr_start		[should be there; is missing in clf and csra currently]
+	view0
+	view1
+	view2
+	view3
+	view4    		[clf only]
+room:kitchen
+	main
+	cocktail_party_start
+	gpsr_start
+	view0
+	view1			[clf only]
+room:bath room
+	main
+	view0
+room:outside
+	main
+	exit
+	view0
+door:corridor_living room
+	main
+	living room
+	corridor
+door:kitchen_living room
+	main
+	living room
+	kitchen
+door:bath room_living room      [clf only]
+	main			[clf only]
+	living room		[clf only]
+	bath room		[clf only]
+door:bath room_corridor	        [csra only]
+	main			[csra only]
+	corridor		[csra only]
+	bath room	 	[csra only]
+door:corridor_outside
+	main
+	corridor
+	outside
+location:living table
+	main
+location:sofa
+	main
+location:comfy chair
+	main
+location:fridge
+	main
+location:kitchen counter
+	main
+location:sink
+	main
+location:stove
+	main
+location:cabinet
+	main
+location:bar
+	main
