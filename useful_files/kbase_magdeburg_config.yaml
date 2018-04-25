@@ -1,0 +1,3 @@
+db_name: magdeburg_db
+copy_on_startup: True
+mongodb_port: 27018
