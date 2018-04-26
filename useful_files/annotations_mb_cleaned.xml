@@ -1421,7 +1421,7 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
-   <ANNOTATION label="location:bedside table">
+   <ANNOTATION label="location:side table">
       <VIEWPOINT label="grasp0">
          <POSITIONDATA frameid="map" theta="-3.08610010147">
             <POINT2D x="19.5499992371" y="5.0">
