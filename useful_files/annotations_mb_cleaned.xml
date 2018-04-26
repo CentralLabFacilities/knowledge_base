@@ -414,9 +414,30 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-	<VIEWPOINT label="tourguide_presentation">
-         <POSITIONDATA frameid="map" theta="1.58451998234">
-            <POINT2D x="18.2681999207" y="14.0082998276">
+	<VIEWPOINT label="cocktailparty_start_couch">
+         <POSITIONDATA frameid="map" theta="3.11550998688">
+            <POINT2D x="18.8479995728" y="11.6479997635">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
+      <VIEWPOINT label="cocktailparty_start_bar">
+         <POSITIONDATA frameid="map" theta="0.00775123992935">
+            <POINT2D x="18.7520008087" y="11.5839996338">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -746,6 +767,27 @@
       <VIEWPOINT label="inspection_end">
          <POSITIONDATA frameid="map" theta="-1.52537000179">
             <POINT2D x="21.8999996185" y="2.5">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
+	<VIEWPOINT label="tourguide_presentation">
+         <POSITIONDATA frameid="map" theta="1.58451998234">
+            <POINT2D x="18.2681999207" y="14.0082998276">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -2509,7 +2551,7 @@
       </VIEWPOINT>
       <VIEWPOINT label="grasp0">
          <POSITIONDATA frameid="map" theta="2.76109004021">
-            <POINT2D x="19.7999992371" y="7.59999990463">
+            <POINT2D x="19.968000412" y="7.39200019836">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -2530,7 +2572,7 @@
       </VIEWPOINT>
       <VIEWPOINT label="grasp1">
          <POSITIONDATA frameid="map" theta="1.745470047">
-            <POINT2D x="18.9500007629" y="6.75">
+            <POINT2D x="19.1359996796" y="6.71999979019">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
