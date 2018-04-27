@@ -233,8 +233,8 @@
          </TIMESTAMP>
       </VIEWPOINT>
 	<VIEWPOINT label="gpsr">
-         <POSITIONDATA frameid="map" theta="0.0">
-            <POINT2D x="17.8994998932" y="11.5302000046">
+         <POSITIONDATA frameid="map" theta="-3.07586">
+            <POINT2D x="18.25" y="11.5">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -394,7 +394,7 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <VIEWPOINT label="inspection_point">
-         <POSITIONDATA frameid="map" theta="0.0">
+         <POSITIONDATA frameid="map" theta="-3.07586">
             <POINT2D x="18.25" y="11.5">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
@@ -1571,7 +1571,49 @@
    <ANNOTATION label="location:dining table">
       <VIEWPOINT label="main">
          <POSITIONDATA frameid="map" theta="-1.62337994576">
-            <POINT2D x="15.8999996185" y="7.59999990463">
+            <POINT2D x="15.6927995682" y="7.39839982986">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
+<VIEWPOINT label="cp0">
+         <POSITIONDATA frameid="map" theta="-1.32581996918">
+            <POINT2D x="15.1808004379" y="7.1423997879">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
+      <VIEWPOINT label="cp1">
+         <POSITIONDATA frameid="map" theta="-1.90403997898">
+            <POINT2D x="16.2304000854" y="6.9376001358">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -2647,7 +2689,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="view0">
+      <VIEWPOINT label="grasp0">
          <POSITIONDATA frameid="map" theta="-3.0981400013">
             <POINT2D x="14.25" y="7.80000019073">
                <GENERATOR>Kbase</GENERATOR>
@@ -2668,7 +2710,7 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
-      <VIEWPOINT label="view1">
+      <VIEWPOINT label="grasp1">
          <POSITIONDATA frameid="map" theta="2.63875007629">
             <POINT2D x="14.1999998093" y="7.19999980927">
                <GENERATOR>Kbase</GENERATOR>
