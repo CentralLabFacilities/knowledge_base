@@ -169,6 +169,27 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
+	<VIEWPOINT label="restricted">
+         <POSITIONDATA frameid="map" theta="1.95377999306">
+            <POINT2D x="15.0500001907" y="8.89999961853">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
       <VIEWPOINT label="view0">
          <POSITIONDATA frameid="map" theta="2.89377999306">
             <POINT2D x="16.9920005798" y="11.4560003281">
@@ -1570,7 +1591,7 @@
    </ANNOTATION>
    <ANNOTATION label="location:dining table">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="-1.62337994576">
+         <POSITIONDATA frameid="map" theta="-2.45863008499">
             <POINT2D x="15.6927995682" y="7.39839982986">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
