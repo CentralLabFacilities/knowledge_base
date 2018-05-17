@@ -30,6 +30,9 @@ MongoDB's default saving location is under /var/lib/mongodb. This can be changed
 1. use the generate_example_data.py script to write into mongodb
 1. terminate the mongo deamon and push your changes
 
+Alternatively you can execute step one and two, then use the generate_and_upload.py in the 
+useful_files directory to automate the rest of the steps.
+
 ## Database Schema
 coming soon...
 
