@@ -13,7 +13,7 @@ class MongoDProcess(Process):
 
     def run(self):
         call(['mkdir', '-p', DB_PATH])
-        call(['mongod', '--dbpath', DB_PATH, '--config', 'mongod.conf'])
+        call(['/bin/sh', '-c', 'mongod --dbpath ' + DB_PATH + ' --config mongod.conf'])
 
 args = sys.argv
 if len(args) < 3:
