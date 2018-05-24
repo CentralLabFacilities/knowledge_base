@@ -520,88 +520,130 @@
         <INSERTED value="1527154445630"/>
         <UPDATED value="1527154445630"/>
       </TIMESTAMP>
-      <POINT2D scope="GLOBAL" x="24125.44140625" y="1310.719970703125">
+      <POINT2D scope="GLOBAL" x="23511.0390625" y="6328.31982421875">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571729"/>
-          <UPDATED value="1527154571729"/>
+          <INSERTED value="1527166831522"/>
+          <UPDATED value="1527166831522"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="23982.080078125" y="3215.35986328125">
+      <POINT2D scope="GLOBAL" x="23306.240234375" y="3297.280029296875">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571729"/>
-          <UPDATED value="1527154571729"/>
+          <INSERTED value="1527166831522"/>
+          <UPDATED value="1527166831522"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="23183.359375" y="3358.719970703125">
+      <POINT2D scope="GLOBAL" x="24289.279296875" y="3338.239990234375">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571729"/>
-          <UPDATED value="1527154571729"/>
+          <INSERTED value="1527166831523"/>
+          <UPDATED value="1527166831523"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="23470.080078125" y="6266.8798828125">
+      <POINT2D scope="GLOBAL" x="24330.240234375" y="1228.800048828125">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571730"/>
-          <UPDATED value="1527154571730"/>
+          <INSERTED value="1527166831523"/>
+          <UPDATED value="1527166831523"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="26869.759765625" y="6410.240234375">
+      <POINT2D scope="GLOBAL" x="1679.359985351562" y="1617.920043945312">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571730"/>
-          <UPDATED value="1527154571730"/>
+          <INSERTED value="1527166831523"/>
+          <UPDATED value="1527166831523"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="27033.599609375" y="10752">
+      <POINT2D scope="GLOBAL" x="1679.359985351562" y="5488.6396484375">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571730"/>
-          <UPDATED value="1527154571730"/>
+          <INSERTED value="1527166831523"/>
+          <UPDATED value="1527166831523"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="13475.83984375" y="10997.759765625">
+      <POINT2D scope="GLOBAL" x="10444.80078125" y="5386.240234375">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571730"/>
-          <UPDATED value="1527154571730"/>
+          <INSERTED value="1527166831524"/>
+          <UPDATED value="1527166831524"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="13414.400390625" y="12779.5205078125">
+      <POINT2D scope="GLOBAL" x="10772.48046875" y="12533.759765625">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571731"/>
-          <UPDATED value="1527154571731"/>
+          <INSERTED value="1527166831524"/>
+          <UPDATED value="1527166831524"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="10608.6396484375" y="12779.5205078125">
+      <POINT2D scope="GLOBAL" x="13352.9599609375" y="12574.720703125">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154571729"/>
-          <UPDATED value="1527154571729"/>
+          <INSERTED value="1527166831524"/>
+          <UPDATED value="1527166831524"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="10444.80078125" y="5611.52001953125">
+      <POINT2D scope="GLOBAL" x="13598.7197265625" y="20992">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154574829"/>
-          <UPDATED value="1527154574829"/>
+          <INSERTED value="1527166831525"/>
+          <UPDATED value="1527166831525"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="1454.079956054688" y="5754.8798828125">
+      <POINT2D scope="GLOBAL" x="0" y="21319.6796875">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154576728"/>
-          <UPDATED value="1527154576728"/>
+          <INSERTED value="1527166831525"/>
+          <UPDATED value="1527166831525"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="1495.0400390625" y="1433.599975585938">
+      <POINT2D scope="GLOBAL" x="163.8399963378906" y="204.7999877929688">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527154579788"/>
-          <UPDATED value="1527154579788"/>
+          <INSERTED value="1527166831525"/>
+          <UPDATED value="1527166831525"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="33505.28125" y="163.8399963378906">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527166831525"/>
+          <UPDATED value="1527166831525"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="33484.796875" y="21299.19921875">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527166831526"/>
+          <UPDATED value="1527166831526"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="13864.9599609375" y="21299.19921875">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527166831526"/>
+          <UPDATED value="1527166831526"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="13373.439453125" y="10895.3603515625">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527166831526"/>
+          <UPDATED value="1527166831526"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="26931.19921875" y="10792.9599609375">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527166831522"/>
+          <UPDATED value="1527166831522"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="26869.759765625" y="6389.76025390625">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527166832640"/>
+          <UPDATED value="1527166832640"/>
         </TIMESTAMP>
       </POINT2D>
     </PRECISEPOLYGON>
@@ -1010,47 +1052,47 @@
     <GENERATOR>unknown</GENERATOR>
     <VIEWPOINT category="VIEW" label="main">
       <TIMESTAMP>
-        <INSERTED value="1524074136154"/>
-        <UPDATED value="1524074136154"/>
+        <INSERTED value="1527167110011"/>
+        <UPDATED value="1527167110011"/>
       </TIMESTAMP>
       <GENERATOR>unknown</GENERATOR>
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527155471626"/>
-          <UPDATED value="1527155471626"/>
+          <INSERTED value="1527167113469"/>
+          <UPDATED value="1527167113469"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="-1.123950004577637" x="25.19039916992188" y="8.048640251159668"/>
+        <POSITION kind="absolute" ref="world" theta="-1.214580059051514" x="25.19039916992188" y="8.048640251159668"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <VIEWPOINT category="VIEW" label="grasp0">
       <TIMESTAMP>
-        <INSERTED value="1527155492088"/>
-        <UPDATED value="1527155492088"/>
+        <INSERTED value="1527167151332"/>
+        <UPDATED value="1527167151332"/>
       </TIMESTAMP>
       <GENERATOR>unknown</GENERATOR>
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527155812275"/>
-          <UPDATED value="1527155812275"/>
+          <INSERTED value="1527167166323"/>
+          <UPDATED value="1527167166323"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="-1.504250049591064" x="25.0265998840332" y="7.618559837341309"/>
+        <POSITION kind="absolute" ref="world" theta="-1.570770025253296" x="25.45660018920898" y="7.720960140228271"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <VIEWPOINT category="VIEW" label="grasp1">
       <TIMESTAMP>
-        <INSERTED value="1527155816204"/>
-        <UPDATED value="1527155816204"/>
+        <INSERTED value="1527167156724"/>
+        <UPDATED value="1527167156724"/>
       </TIMESTAMP>
       <GENERATOR>unknown</GENERATOR>
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1527155818997"/>
-          <UPDATED value="1527155818997"/>
+          <INSERTED value="1527167171134"/>
+          <UPDATED value="1527167171134"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="-1.815809965133667" x="25.51810073852539" y="7.700479984283447"/>
+        <POSITION kind="absolute" ref="world" theta="-1.107120037078857" x="25.0674991607666" y="7.679999828338623"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
@@ -1478,6 +1520,21 @@
       <UPDATED value="1527154601894"/>
     </TIMESTAMP>
     <GENERATOR>unknown</GENERATOR>
+    <VIEWPOINT category="VIEW" label="main">
+      <TIMESTAMP>
+        <INSERTED value="1527165960201"/>
+        <UPDATED value="1527165960201"/>
+      </TIMESTAMP>
+      <GENERATOR>unknown</GENERATOR>
+      <ROBOTPOSITION>
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1527165963009"/>
+          <UPDATED value="1527165963009"/>
+        </TIMESTAMP>
+        <POSITION kind="absolute" ref="world" theta="0.137583002448082" x="22.50749969482422" y="18.73920059204102"/>
+      </ROBOTPOSITION>
+    </VIEWPOINT>
     <PRECISEPOLYGON>
       <GENERATOR>unknown</GENERATOR>
       <TIMESTAMP>

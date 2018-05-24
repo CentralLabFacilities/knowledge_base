@@ -10,6 +10,7 @@ class Annotation(me.EmbeddedDocument):
 
     def to_xml(self):
         attribs = {x: self.__getattribute__(x) for x in self._fields}
+        print(attribs['label'])
         viewpoints = attribs.pop('viewpoints')
         polygon = attribs.pop('polygon')
         attribs = {x: str(attribs[x]) for x in attribs}

@@ -9,6 +9,7 @@ class Viewpoint(me.EmbeddedDocument):
 
     def to_xml(self):
         attribs = {x: self.__getattribute__(x) for x in self._fields}
+        print(attribs)
         posi = attribs.pop('positiondata')
         root = ET.Element('VIEWPOINT', attrib=attribs)
         root.append(posi.to_xml())
