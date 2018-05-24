@@ -1,0 +1,77 @@
+room:corridor
+	main
+	viewX
+location:sink
+	main
+	viewX
+	graspX
+door:corridor_living room
+	main
+	living room
+	corridor
+door:corridor_bath room	        
+	main					
+	bath room
+	corridor
+	 
+room:living room
+	main	
+	viewX
+location:living table
+	main
+	graspX
+location:sofa
+	main
+	viewX
+location:comfy chair
+	main
+	viewX
+
+room:kitchen
+	main
+	viewX
+location:kitchen counter
+	main
+	graspX
+location:stove
+	main
+	graspX
+location:bar
+	main
+	graspX
+	viewX
+
+room:bath room
+	main
+	viewX
+location:fridge
+	main
+	viewX
+location:cabinet
+	main
+	graspX
+
+room:outside
+	main
+	viewX
+location:exit
+	main
+	viewX
+
+room:secret room
+	main
+location:inspection point
+	main
+location:inspection end
+	main
+location:help me carry start
+	main
+location:cocktail party start
+	main
+location:party area
+	main
+location:gpsr start a
+	main
+location:gpsr start b
+	main
+
