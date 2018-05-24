@@ -2,7 +2,6 @@ from Classes import *
 import mongoengine as me
 from utils import save_complete_db, add_annotation
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 
 import sys
 
