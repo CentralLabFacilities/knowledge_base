@@ -10,6 +10,7 @@ class Location(me.Document):
     room = me.ReferenceField(Room)
     isbeacon = me.BooleanField(default=False)
     isplacement = me.BooleanField(default=False)
+    ishidden = me.BooleanField(default=False)
     annotation = me.EmbeddedDocumentField(Annotation)
 
     def to_xml(self):
@@ -50,3 +51,12 @@ class Location(me.Document):
     @classmethod
     def get_tag(cls):
         return 'LOCATION'
+
+    # somewhat hacky but also elegant way to filter all locations to be not hidden, except for when you specifically
+    # search for a hidden location
+    @classmethod
+    def objects(cls, **kwargs):
+        if 'name' not in kwargs:
+            kwargs['hidden'] = False
+        ret = super(Location).objects(kwargs)
+        return ret

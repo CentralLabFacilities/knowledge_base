@@ -3,6 +3,7 @@ from Viewpoint import Viewpoint
 from Point2d import Point2d
 import xml.etree.ElementTree as ET
 
+
 class Annotation(me.EmbeddedDocument):
     label = me.StringField(max_length=100, default='')
     polygon = me.PolygonField()
