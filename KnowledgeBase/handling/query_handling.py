@@ -168,7 +168,7 @@ def handle_in_which(query):
         for room in Room.objects(annotation__polygon__geo_intersects=[point.x, point.y]):
             return ET.tostring(room.to_xml()), 0
     elif query[0] == 'location':
-        for loc in Location.objects(annotation__polygon__geo_intersects=[point.x, point.y]):
+        for loc in Location.objects(ishidden=False, annotation__polygon__geo_intersects=[point.x, point.y]):
             return ET.tostring(loc.to_xml()), 0
 
     print('Failed, query ' + ' '.join(query) + ' could not find a corresponding item!')
@@ -205,6 +205,8 @@ def handle_which(query):
             rloc_class = Location
             value = rloc_class.objects(name=value).get()
     method_parameter_dict = {attribute_of_class : value}
+    if class_of_bdo is Location:
+        method_parameter_dict['ishidden'] = False
     if not advanced_query:
         list_of_searched_bdo = class_of_bdo.objects(**method_parameter_dict)
     else:
@@ -254,7 +256,10 @@ def handle_how_many(query):
 
     # get attribute for which the number of distinct elements shall be found
     attribute_of_class = query[0]
-    distinct = class_of_bdo.objects().distinct(attribute_of_class)
+    location_hider = {}
+    if class_of_bdo == Location:
+        location_hider['ishidden'] = False
+    distinct = class_of_bdo.objects(**location_hider).distinct(attribute_of_class)
     return int_to_xml(len(distinct)), 0
 
 
