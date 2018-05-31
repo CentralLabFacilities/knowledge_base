@@ -86,6 +86,7 @@ arena_locations.append(fridge)
 outside = Room(name='outside', numberofdoors='0')
 exit = Location(name='exit', room=outside, isbeacon='True')
 arena_rooms.append(outside)
+arena_locations.append(exit)
 
 d_corridor_livingroom = Door(roomone=corridor, roomtwo=livingroom)
 arena_doors.append(d_corridor_livingroom)
