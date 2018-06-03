@@ -13,7 +13,7 @@ class Arena(me.Document):
 
     def to_xml(self):
         root = ET.Element('ARENA')
-        for loc in self.locations:
+        for loc in [x for x in self.locations if not x.ishidden]:
             root.append(loc.to_xml())
         for door in self.doors:
             root.append(door.to_xml())
