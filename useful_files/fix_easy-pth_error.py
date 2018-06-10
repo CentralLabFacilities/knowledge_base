@@ -1,16 +1,13 @@
 import fileinput
 import sys
-
-from pathlib import Path
-
+import os.path
 
 prefix = sys.argv[1]
 
 filename = prefix + "/lib/python2.7/dist-packages/easy-install.pth"
 filename = filename.replace("//", "/")
 
-file = Path(filename)
-if file.is_file():
+if os.path.isfile(filename):
     print("removing /usr/lib/python2.7 from " + filename)
     for line in fileinput.input(filename, inplace=True):
         newline = line.replace("\n", "")
@@ -19,8 +16,8 @@ if file.is_file():
 
 filename = prefix + "/lib/python2.7/site-packages/easy-install.pth"
 filename = filename.replace("//", "/")
-file = Path(filename)
-if file.is_file():
+
+if os.path.isfile(filename):
     print("removing /usr/lib/python2.7 from " + filename)
     for line in fileinput.input(filename, inplace=True):
         newline = line.replace("\n", "")
