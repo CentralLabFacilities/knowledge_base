@@ -1,7 +1,7 @@
 import fileinput
 import sys
 
-from pathlib2 import Path
+from pathlib import Path
 
 
 prefix = sys.argv[1]
