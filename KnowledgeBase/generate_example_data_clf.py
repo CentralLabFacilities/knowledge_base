@@ -2,7 +2,6 @@ from Classes import *
 import mongoengine as me
 from utils import save_complete_db, add_annotation
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 
 import sys
 
@@ -54,47 +53,61 @@ for anno in annotations:
 
 #Arena-entries (locations, rooms etc)
 #<N_placementTwo> = (dinner table) | cabinet | bookshelf | (kitchen counter) | sofa | (couch table) | (side table) | (stove) | bed | closet | desk | bar;
-kitchen = Room(name='kitchen', numberofdoors='1')
-fridge = Location(name='fridge', room=kitchen, isbeacon='True', isplacement='True')
-kitchencounter = Location(name='kitchen counter', room=kitchen, isbeacon='True', isplacement='True')
+kitchen = Room(name='kitchen', numberofdoors='0')
+kitchencounter = Location(name='kitchen counter', room=kitchen, isplacement='True')
+stove = Location(name='stove', room=kitchen, isplacement='True')
 bar = Location(name='bar', room=kitchen, isbeacon='True', isplacement='True')
-cabinet = Location(name='cabinet', room=kitchen, isbeacon='True', isplacement='True')
-sink = Location(name='sink', room=kitchen, isbeacon='True', isplacement='True')
-stove = Location(name='stove', room=kitchen, isbeacon='True', isplacement='True')
 arena_rooms.append(kitchen)
-arena_locations.append(fridge)
 arena_locations.append(kitchencounter)
-arena_locations.append(bar)
-arena_locations.append(cabinet)
-arena_locations.append(sink)
 arena_locations.append(stove)
+arena_locations.append(bar)
 
-livingroom = Room(name='living room', numberofdoors='3')
-livingtable = Location(name='living table', room=livingroom, isbeacon='True', isplacement='True')
-sofa = Location(name='sofa', room=livingroom, isbeacon='True', isplacement='True')
-comfychair = Location(name='comfy chair', room=livingroom, isbeacon='True', isplacement='True')
+livingroom = Room(name='living room', numberofdoors='1')
+livingtable = Location(name='living table', room=livingroom, isplacement='True')
+sofa = Location(name='sofa', room=livingroom, isbeacon='True')
+comfychair = Location(name='comfy chair', room=livingroom, isbeacon='True')
 arena_rooms.append(livingroom)
 arena_locations.append(livingtable)
 arena_locations.append(sofa)
 arena_locations.append(comfychair)
 
 corridor = Room(name='corridor', numberofdoors='2')
+sink = Location(name='sink', room=corridor, isbeacon='True', isplacement='True')
 arena_rooms.append(corridor)
+arena_locations.append(sink)
 
 bathroom = Room(name='bath room', numberofdoors='1')
+fridge = Location(name='fridge', room=bathroom, isbeacon='True')
+cabinet = Location(name='cabinet', room=bathroom, isplacement='True')
 arena_rooms.append(bathroom)
+arena_locations.append(cabinet)
+arena_locations.append(fridge)
 
-outside = Room(name='outside', numberofdoors='1')
+outside = Room(name='outside', numberofdoors='0')
+exit = Location(name='exit', room=outside, isbeacon='True')
 arena_rooms.append(outside)
+arena_locations.append(exit)
 
-d_outside_corridor = Door(roomone=corridor, roomtwo=outside)
-arena_doors.append(d_outside_corridor)
-d_bathroom_livingroom = Door(roomone=bathroom, roomtwo=livingroom)
-arena_doors.append(d_bathroom_livingroom)
-d_livingroom_kitchen = Door(roomone=kitchen, roomtwo=livingroom)
-arena_doors.append(d_livingroom_kitchen)
 d_corridor_livingroom = Door(roomone=corridor, roomtwo=livingroom)
 arena_doors.append(d_corridor_livingroom)
+d_corridor_bathroom = Door(roomone=corridor, roomtwo=bathroom)
+arena_doors.append(d_corridor_bathroom)
+
+inspectionpoint = Location(name='inspection point', room=livingroom, ishidden='True')
+inspectionend = Location(name='inspection end', room=corridor, ishidden='True')
+helpmecarrystart = Location(name='help me carry start', room=livingroom, ishidden='True')
+cocktailpartystart = Location(name='cocktail party start', room=livingroom, ishidden='True')
+partyarea = Location(name='party area', room=livingroom, ishidden='True')
+gpsrstarta = Location(name='gpsr start a', room=livingroom, ishidden='True')
+gpsrstartb = Location(name='gpsr start b', room=bathroom, ishidden='True')
+arena_locations.append(inspectionpoint)
+arena_locations.append(inspectionend)
+arena_locations.append(helpmecarrystart)
+arena_locations.append(cocktailpartystart)
+arena_locations.append(partyarea)
+arena_locations.append(gpsrstarta)
+arena_locations.append(gpsrstartb)
+
 
 #Objects-Entries
 #categorys:

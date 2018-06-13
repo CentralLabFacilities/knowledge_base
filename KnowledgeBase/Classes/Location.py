@@ -10,6 +10,7 @@ class Location(me.Document):
     room = me.ReferenceField(Room)
     isbeacon = me.BooleanField(default=False)
     isplacement = me.BooleanField(default=False)
+    ishidden = me.BooleanField(default=False)
     annotation = me.EmbeddedDocumentField(Annotation)
 
     def to_xml(self):
