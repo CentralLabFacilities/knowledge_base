@@ -7,6 +7,7 @@ from xml.dom import minidom
 import sys
 
 
+#TEST if local github works
 
 #Lists to add your entries to
 arena_rooms = []
