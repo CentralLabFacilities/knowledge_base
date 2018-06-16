@@ -33,6 +33,8 @@ db_to_use_as_blueprint_name = data['db_name']
 copy_on_startup = data['copy_on_startup']
 mongodb_port = int(data['mongodb_port'])
 
+print('Config is as follows: ' + str(data))
+
 print('Trying to connect to mongod...')
 
 db_run = None
