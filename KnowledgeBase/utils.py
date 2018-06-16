@@ -133,6 +133,7 @@ def reduce_query(query_string, accepted_w_words):
 
     # build a list with all names found in the database
     names =  [x.name for x in Rcobject.objects()]
+    names += [x.category for x in Rcobject.objects()]
     names += [x.name for x in Location.objects()]
     names += [x.name for x in Room.objects()]
     names += [x.name for x in Person.objects()]
