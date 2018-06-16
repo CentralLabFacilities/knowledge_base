@@ -5,14 +5,18 @@ location:sink
 	main
 	viewX
 	graspX
-door:corridor_living room
+
+room:bedroom
+	main	
+	viewX
+door:bedroom_kitchen
 	main
-	living room
-	corridor
-door:corridor_bath room	        
+	bedroom
+	kitchen
+door:bedroom_living room	        
 	main					
-	bath room
-	corridor
+	bedroom
+	living room
 	 
 room:living room
 	main	
@@ -41,7 +45,7 @@ location:bar
 	graspX
 	viewX
 
-room:bath room
+room:dining room
 	main
 	viewX
 location:fridge
