@@ -58,6 +58,14 @@ location:cabinet
 room:outside
 	main
 	viewX
+door:outside_corridor
+	main
+	outside
+	corridor
+door:outside_living room
+	main
+	outside
+	living room
 location:exit
 	main
 	viewX
