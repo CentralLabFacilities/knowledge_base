@@ -32,7 +32,7 @@ mongod_process.start()
 
 #TODO SET CORRRECT PYTHON FILE CLF CSRA MONTREAL ETC
 # execute generate example data and wait for it to write everything to the database files
-call(['python', '../KnowledgeBase/generate_example_data_clf.py', DATABASE_NAME,  ANNOTATION_NAME_CLEANED])
+call(['python', '../KnowledgeBase/generate_example_data_mt.py', DATABASE_NAME,  ANNOTATION_NAME_CLEANED])
 time.sleep(3)
 
 # terminate the daemon
