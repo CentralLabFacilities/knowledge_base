@@ -42,6 +42,10 @@ mongod_process.terminate()
 call(['scp', DB_PATH + DATABASE_NAME + '.0', 'sync0r@cadmium:/vol/kbases'])
 call(['scp', DB_PATH + DATABASE_NAME + '.ns', 'sync0r@cadmium:/vol/kbases'])
 
+# copy the database to muthr
+call(['scp', DB_PATH + DATABASE_NAME + '.0', 'sync0r@muthr:/vol/kbases'])
+call(['scp', DB_PATH + DATABASE_NAME + '.ns', 'sync0r@muthr:/vol/kbases'])
+
 # remove evidence all evidence
 call(['rm', '-r', DB_PATH])
 call(['rm', 'mongodb.log'])
