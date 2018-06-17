@@ -1,10 +1,6 @@
 room:corridor
 	main
 	viewX
-location:sink
-	main
-	viewX
-	graspX
 
 room:bedroom
 	main	
@@ -17,30 +13,47 @@ door:bedroom_living room
 	main					
 	bedroom
 	living room
+location:side table
+	main
+	graspX
+location:bed
+	main
+	graspX
+location:desk
+	main
+	graspX
 	 
 room:living room
 	main	
 	viewX
-location:living table
+location:end table
 	main
 	graspX
-location:sofa
+location:couch
 	main
 	viewX
-location:comfy chair
+location:bookcase
 	main
 	viewX
 
 room:kitchen
 	main
 	viewX
-location:kitchen counter
+location:sink
+	main
+	viewX
+	graspX
+location:dishwasher
 	main
 	graspX
-location:stove
+location:counter
 	main
 	graspX
-location:bar
+location:cupboard
+	main
+	graspX
+	viewX
+location:storage table
 	main
 	graspX
 	viewX
@@ -48,12 +61,9 @@ location:bar
 room:dining room
 	main
 	viewX
-location:fridge
+location:dining table
 	main
 	viewX
-location:cabinet
-	main
-	graspX
 
 room:outside
 	main
