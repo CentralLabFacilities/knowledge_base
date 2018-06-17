@@ -160,6 +160,7 @@ objs.append(Rcobject(name="dish",          category='tableware', color="green", 
 objs.append(Rcobject(name="fork",          category='cutlery', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
 objs.append(Rcobject(name="knife",          category='cutlery', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
 objs.append(Rcobject(name="spoon",          category='cutlery', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
+objs.append(Rcobject(name="cascade pod",         category='cleaning stuff', color="yellow",             location=sidetable, shape="boxy", size='1', weight='1'))
 
 
 
