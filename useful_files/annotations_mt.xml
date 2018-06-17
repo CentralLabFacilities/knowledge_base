@@ -407,10 +407,10 @@
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1529243781610"/>
-          <UPDATED value="1529243781610"/>
+          <INSERTED value="1529261667684"/>
+          <UPDATED value="1529261667684"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="-1.650629997253418" x="39.0625" y="3.5625"/>
+        <POSITION kind="absolute" ref="world" theta="-1.664240002632141" x="38.99390029907227" y="4.792319774627686"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <VIEWPOINT category="VIEW" label="view0">
@@ -422,10 +422,10 @@
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1529243792043"/>
-          <UPDATED value="1529243792043"/>
+          <INSERTED value="1529261675491"/>
+          <UPDATED value="1529261675491"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="-1.833789944648743" x="38.875" y="4.0625"/>
+        <POSITION kind="absolute" ref="world" theta="-1.697810053825378" x="38.95299911499023" y="4.81279993057251"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
