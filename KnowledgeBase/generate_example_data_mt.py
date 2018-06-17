@@ -147,12 +147,12 @@ objs.append(Rcobject(name="paprika",   category='fruits', color="red",          
 objs.append(Rcobject(name="crackers",          category='snacks', color="orange",            location=bookcase, shape="quadratic and flat", size='1', weight='1'))
 objs.append(Rcobject(name="potato chips",          category='snacks', color="orange",            location=bookcase, shape="couldy", size='5', weight='3'))
 objs.append(Rcobject(name="pringles",          category='snacks', color="green",            location=bookcase, shape="cylindrical", size='5', weight='3'))
-objs.append(Rcobject(name="bowl",          category='kitchen stuff', color="green",            location=storagetable, shape="cylindrical and hollow", size='4', weight='1'))
-objs.append(Rcobject(name="cup",          category='kitchen stuff', color="green",            location=storagetable, shape="cylindrical and hollow", size='4', weight='1'))
-objs.append(Rcobject(name="fork",          category='kitchen stuff', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
-objs.append(Rcobject(name="knife",          category='kitchen stuff', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
-objs.append(Rcobject(name="plate",          category='kitchen stuff', color="green",            location=storagetable, shape="quite flat", size='4', weight='1'))
-objs.append(Rcobject(name="spoon",          category='kitchen stuff', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
+objs.append(Rcobject(name="bowl",          category='tableware', color="green",            location=storagetable, shape="cylindrical and hollow", size='4', weight='1'))
+objs.append(Rcobject(name="cup",          category='tableware', color="green",            location=storagetable, shape="cylindrical and hollow", size='4', weight='1'))
+objs.append(Rcobject(name="dish",          category='tableware', color="green",            location=storagetable, shape="quite flat", size='4', weight='1'))
+objs.append(Rcobject(name="fork",          category='cutlery', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
+objs.append(Rcobject(name="knife",          category='cutlery', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
+objs.append(Rcobject(name="spoon",          category='cutlery', color="green",            location=storagetable, shape="elongated", size='2', weight='1'))
 
 
 
