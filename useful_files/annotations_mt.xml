@@ -2291,10 +2291,10 @@
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1529287517919"/>
-          <UPDATED value="1529287517919"/>
+          <INSERTED value="1529348206053"/>
+          <UPDATED value="1529348206053"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="1.622040033340454" x="33.1776008605957" y="9.195520401000977"/>
+        <POSITION kind="absolute" ref="world" theta="1.581889986991882" x="33.27590179443359" y="9.076740264892578"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
