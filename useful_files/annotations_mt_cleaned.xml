@@ -1143,8 +1143,13 @@
    </ANNOTATION>
    <ANNOTATION label="location:gpsr start a">
       <VIEWPOINT label="main">
+<<<<<<< HEAD
          <POSITIONDATA frameid="map" theta="0.043449498713">
             <POINT2D x="33.5052986145" y="12.3493995667">
+=======
+         <POSITIONDATA frameid="map" theta="-1.60715997219">
+            <POINT2D x="34.4719009399" y="13.4349002838">
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -1164,28 +1169,44 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <PRECISEPOLYGON>
+<<<<<<< HEAD
          <POINT2D x="33.2390390625" y="12.6566396484">
+=======
+         <POINT2D x="33.96403125" y="13.7625595703">
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
+<<<<<<< HEAD
          <POINT2D x="33.28" y="12.0832001953">
+=======
+         <POINT2D x="34.8979179688" y="13.7625595703">
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
+<<<<<<< HEAD
          <POINT2D x="33.8329570312" y="12.0422402344">
+=======
+         <POINT2D x="34.9634570313" y="13.1071992188">
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
+<<<<<<< HEAD
          <POINT2D x="33.8329570312" y="12.5951992188">
+=======
+         <POINT2D x="34.1278710938" y="13.0416640625">
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
@@ -1206,8 +1227,8 @@
    </ANNOTATION>
    <ANNOTATION label="location:gpsr start b">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="-3.12158989906">
-            <POINT2D x="37.457901001" y="9.0931186676">
+         <POSITIONDATA frameid="map" theta="0.0674637034535">
+            <POINT2D x="33.35779953" y="6.22592020035">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -1227,28 +1248,28 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <PRECISEPOLYGON>
-         <POINT2D x="37.232640625" y="9.4003203125">
+         <POINT2D x="32.9809921875" y="6.66828808594">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="37.232640625" y="8.78591992187">
+         <POINT2D x="32.9809921875" y="5.78355224609">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="37.6217617188" y="8.80640039063">
+         <POINT2D x="33.9312617188" y="5.78355224609">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="37.7241601563" y="9.42079980469">
+         <POINT2D x="33.9476484375" y="6.60275244141">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
@@ -1353,8 +1374,13 @@
    </ANNOTATION>
    <ANNOTATION label="location:tourguide">
       <VIEWPOINT label="main">
+<<<<<<< HEAD
          <POSITIONDATA frameid="map" theta="1.57079994678">
             <POINT2D x="31.6415996552" y="14.9759998322">
+=======
+         <POSITIONDATA frameid="map" theta="1.97722005844">
+            <POINT2D x="31.5555992126" y="15.1224002838">
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -3262,6 +3288,7 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
+<<<<<<< HEAD
    <ANNOTATION label="location:final grasp">
       <VIEWPOINT label="main">
          <POSITIONDATA frameid="map" theta="1.58176994324">
@@ -3325,4 +3352,6 @@
          <UPDATED value="1"/>
       </TIMESTAMP>
    </ANNOTATION>
+=======
+>>>>>>> 03d8143bec65fb45641e8af51f3dc948cf12daea
 </LIST>
