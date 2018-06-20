@@ -2803,4 +2803,62 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
+  <ANNOTATION label="location:final grasp">
+    <TIMESTAMP>
+      <INSERTED value="1529533974114"/>
+      <UPDATED value="1529533974114"/>
+    </TIMESTAMP>
+    <GENERATOR>unknown</GENERATOR>
+    <VIEWPOINT category="VIEW" label="main">
+      <TIMESTAMP>
+        <INSERTED value="1529533981488"/>
+        <UPDATED value="1529533981488"/>
+      </TIMESTAMP>
+      <GENERATOR>unknown</GENERATOR>
+      <ROBOTPOSITION>
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1529534637376"/>
+          <UPDATED value="1529534637376"/>
+        </TIMESTAMP>
+        <POSITION kind="absolute" ref="world" theta="1.581769943237305" x="35.81949996948242" y="8.765439987182617"/>
+      </ROBOTPOSITION>
+    </VIEWPOINT>
+    <PRECISEPOLYGON>
+      <GENERATOR>unknown</GENERATOR>
+      <TIMESTAMP>
+        <INSERTED value="1529533974115"/>
+        <UPDATED value="1529533974115"/>
+      </TIMESTAMP>
+      <POINT2D scope="GLOBAL" x="35287.0390625" y="9175.0400390625">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1529534657672"/>
+          <UPDATED value="1529534657672"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="35225.6015625" y="8314.880859375">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1529534657989"/>
+          <UPDATED value="1529534657989"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="36126.71875" y="8417.2802734375">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1529534658413"/>
+          <UPDATED value="1529534658413"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="36270.08203125" y="9256.9599609375">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1529534659086"/>
+          <UPDATED value="1529534659086"/>
+        </TIMESTAMP>
+      </POINT2D>
+    </PRECISEPOLYGON>
+  </ANNOTATION>
+
 </LIST>
