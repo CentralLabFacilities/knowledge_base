@@ -1209,7 +1209,7 @@
           <INSERTED value="1529449773478"/>
           <UPDATED value="1529449773478"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="1.570799946784973" x="31.64159965515137" y="14.97599983215332"/>
+        <POSITION kind="absolute" ref="world" theta="1.977220058441162" x="31.55559921264648" y="15.12240028381348"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>

@@ -464,8 +464,8 @@
    </ANNOTATION>
    <ANNOTATION label="room:outside">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="-1.65062999725">
-            <POINT2D x="39.0625" y="3.5625">
+         <POSITIONDATA frameid="map" theta="-1.66424000263">
+            <POINT2D x="38.9939002991" y="4.79231977463">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -485,8 +485,8 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <VIEWPOINT label="view0">
-         <POSITIONDATA frameid="map" theta="-1.83378994465">
-            <POINT2D x="38.875" y="4.0625">
+         <POSITIONDATA frameid="map" theta="-1.69781005383">
+            <POINT2D x="38.952999115" y="4.81279993057">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -954,7 +954,7 @@
    </ANNOTATION>
    <ANNOTATION label="location:help me carry start">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="-0.865512013435">
+         <POSITIONDATA frameid="map" theta="0.0517129004002">
             <POINT2D x="33.5052986145" y="12.4518003464">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
@@ -1017,8 +1017,8 @@
    </ANNOTATION>
    <ANNOTATION label="location:cocktail party start">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="-0.546175003052">
-            <POINT2D x="36.5773010254" y="8.97023963928">
+         <POSITIONDATA frameid="map" theta="-0.558598995209">
+            <POINT2D x="35.8646011353" y="9.28973007202">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -1038,28 +1038,28 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <PRECISEPOLYGON>
-         <POINT2D x="36.0857578125" y="9.216">
+         <POINT2D x="35.5041289063" y="9.65017578125">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="35.9424023437" y="8.62208007813">
+         <POINT2D x="35.5205117188" y="9.04396777344">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="37.0278398438" y="8.62208007813">
+         <POINT2D x="36.1758710937" y="8.88012792969">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="37.0892773437" y="9.359359375">
+         <POINT2D x="36.35609375" y="9.65017578125">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
@@ -1143,8 +1143,8 @@
    </ANNOTATION>
    <ANNOTATION label="location:gpsr start a">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="0.132549002767">
-            <POINT2D x="35.2051010132" y="8.86783981323">
+         <POSITIONDATA frameid="map" theta="0.043449498713">
+            <POINT2D x="33.5052986145" y="12.3493995667">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -1164,28 +1164,28 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <PRECISEPOLYGON>
-         <POINT2D x="34.8979179688" y="9.11359960937">
+         <POINT2D x="33.2390390625" y="12.6566396484">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="34.8774414062" y="8.68352050781">
+         <POINT2D x="33.28" y="12.0832001953">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="35.4099179688" y="8.54016015625">
+         <POINT2D x="33.8329570312" y="12.0422402344">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="35.4304023438" y="8.99071972656">
+         <POINT2D x="33.8329570312" y="12.5951992188">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
@@ -1353,8 +1353,8 @@
    </ANNOTATION>
    <ANNOTATION label="location:tourguide">
       <VIEWPOINT label="main">
-         <POSITIONDATA frameid="map" theta="-0.580758988857">
-            <POINT2D x="35.4304008484" y="9.03168010712">
+         <POSITIONDATA frameid="map" theta="1.97722005844">
+            <POINT2D x="31.5555992126" y="15.1224002838">
                <GENERATOR>Kbase</GENERATOR>
                <TIMESTAMP>
                   <INSERTED value="1"/>
@@ -1374,28 +1374,28 @@
          </TIMESTAMP>
       </VIEWPOINT>
       <PRECISEPOLYGON>
-         <POINT2D x="35.2665585937" y="9.216">
+         <POINT2D x="31.232" y="15.2575996094">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="35.4304023438" y="8.68352050781">
+         <POINT2D x="31.2831992187" y="14.7455996094">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="35.7785625" y="8.62208007813">
+         <POINT2D x="31.8975996094" y="14.72">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
                <UPDATED value="1"/>
             </TIMESTAMP>
          </POINT2D>
-         <POINT2D x="35.921921875" y="9.0316796875">
+         <POINT2D x="31.9487988281" y="15.3855996094">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
@@ -2654,6 +2654,27 @@
             <UPDATED value="1"/>
          </TIMESTAMP>
       </VIEWPOINT>
+      <VIEWPOINT label="bar">
+         <POSITIONDATA frameid="map" theta="1.58188998699">
+            <POINT2D x="33.7019004822" y="8.96205043793">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
       <PRECISEPOLYGON>
          <POINT2D x="33.5257617187" y="10.1580800781">
             <GENERATOR>Kbase</GENERATOR>
@@ -3097,6 +3118,132 @@
             </TIMESTAMP>
          </POINT2D>
          <POINT2D x="29.6550410156" y="13.9878398438">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </PRECISEPOLYGON>
+      <GENERATOR>Kbase</GENERATOR>
+      <TIMESTAMP>
+         <INSERTED value="1"/>
+         <UPDATED value="1"/>
+      </TIMESTAMP>
+   </ANNOTATION>
+   <ANNOTATION label="location:tourguide public left">
+      <VIEWPOINT label="main">
+         <POSITIONDATA frameid="map" theta="1.60132002831">
+            <POINT2D x="26.7775993347" y="17.9456005096">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
+      <PRECISEPOLYGON>
+         <POINT2D x="26.368" y="18.176">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <POINT2D x="26.3167988281" y="17.536">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <POINT2D x="26.9311992187" y="17.4335996094">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <POINT2D x="27.136" y="18.2015996094">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </PRECISEPOLYGON>
+      <GENERATOR>Kbase</GENERATOR>
+      <TIMESTAMP>
+         <INSERTED value="1"/>
+         <UPDATED value="1"/>
+      </TIMESTAMP>
+   </ANNOTATION>
+   <ANNOTATION label="location:tourguide public right">
+      <VIEWPOINT label="main">
+         <POSITIONDATA frameid="map" theta="1.5847799778">
+            <POINT2D x="41.5488014221" y="18.0223999023">
+               <GENERATOR>Kbase</GENERATOR>
+               <TIMESTAMP>
+                  <INSERTED value="1"/>
+                  <UPDATED value="1"/>
+               </TIMESTAMP>
+            </POINT2D>
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POSITIONDATA>
+         <GENERATOR>Kbase</GENERATOR>
+         <TIMESTAMP>
+            <INSERTED value="1"/>
+            <UPDATED value="1"/>
+         </TIMESTAMP>
+      </VIEWPOINT>
+      <PRECISEPOLYGON>
+         <POINT2D x="41.1903984375" y="18.2271992187">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <POINT2D x="41.164796875" y="17.6383984375">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <POINT2D x="41.9328007813" y="17.7408007813">
+            <GENERATOR>Kbase</GENERATOR>
+            <TIMESTAMP>
+               <INSERTED value="1"/>
+               <UPDATED value="1"/>
+            </TIMESTAMP>
+         </POINT2D>
+         <POINT2D x="42.0351992188" y="18.304">
             <GENERATOR>Kbase</GENERATOR>
             <TIMESTAMP>
                <INSERTED value="1"/>
