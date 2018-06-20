@@ -122,6 +122,8 @@ partyarea = Location(name='party area', room=livingroom, ishidden=True)
 gpsrstarta = Location(name='gpsr start a', room=livingroom, ishidden=True)
 gpsrstartb = Location(name='gpsr start b', room=bedroom, ishidden=True)
 tourguide = Location(name='tourguide', room=bedroom, ishidden=True)
+tourguidepublicleft = Location(name='tourguide public left', room=outside, ishidden=True)
+tourguidepublicright = Location(name='tourguide public right', room=outside, ishidden=True)
 arena_locations.append(inspectionpoint)
 arena_locations.append(inspectionend)
 arena_locations.append(helpmecarrystart)
@@ -130,6 +132,8 @@ arena_locations.append(partyarea)
 arena_locations.append(gpsrstarta)
 arena_locations.append(gpsrstartb)
 arena_locations.append(tourguide)
+arena_locations.append(tourguidepublicleft)
+arena_locations.append(tourguidepublicright)
 
 
 #Objects-Entries
