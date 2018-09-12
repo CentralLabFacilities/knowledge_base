@@ -10,13 +10,71 @@
     <UPDATED value="1536148775871"/>
   </TIMESTAMP>
 
+<ANNOTATION label="room:trophy room">
+    <TIMESTAMP>
+      <INSERTED value="1536758927603"/>
+      <UPDATED value="1536758927603"/>
+    </TIMESTAMP>
+    <GENERATOR>unknown</GENERATOR>
+    <VIEWPOINT category="VIEW" label="main">
+      <TIMESTAMP>
+        <INSERTED value="1536758930160"/>
+        <UPDATED value="1536758930160"/>
+      </TIMESTAMP>
+      <GENERATOR>unknown</GENERATOR>
+      <ROBOTPOSITION>
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1536758932620"/>
+          <UPDATED value="1536758932620"/>
+        </TIMESTAMP>
+        <POSITION kind="absolute" ref="world" theta="1.570799946784973" x="2.899970054626465" y="4.587520122528076"/>
+      </ROBOTPOSITION>
+    </VIEWPOINT>
+    <PRECISEPOLYGON>
+      <GENERATOR>unknown</GENERATOR>
+      <TIMESTAMP>
+        <INSERTED value="1536758927603"/>
+        <UPDATED value="1536758927603"/>
+      </TIMESTAMP>
+      <POINT2D scope="GLOBAL" x="5062.65576171875" y="3129.343994140625">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1536758940098"/>
+          <UPDATED value="1536758940098"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="4997.1201171875" y="5439.48779296875">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1536758940099"/>
+          <UPDATED value="1536758940099"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="950.2720336914062" y="5439.48779296875">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1536758940098"/>
+          <UPDATED value="1536758940098"/>
+        </TIMESTAMP>
+      </POINT2D>
+      <POINT2D scope="GLOBAL" x="933.8880004882812" y="3080.192138671875">
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1536758941521"/>
+          <UPDATED value="1536758941521"/>
+        </TIMESTAMP>
+      </POINT2D>
+    </PRECISEPOLYGON>
+  </ANNOTATION>
+
   <ANNOTATION label="room:corridor">
     <TIMESTAMP>
       <INSERTED value="1536148964136"/>
       <UPDATED value="1536148964136"/>
     </TIMESTAMP>
     <GENERATOR>unknown</GENERATOR>
-    <VIEWPOINT category="VIEW" label="main">
+   <VIEWPOINT category="VIEW" label="main">
       <TIMESTAMP>
         <INSERTED value="1536149199041"/>
         <UPDATED value="1536149199041"/>
@@ -25,10 +83,10 @@
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536150378667"/>
-          <UPDATED value="1536150378667"/>
+          <INSERTED value="1536759017241"/>
+          <UPDATED value="1536759017241"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="3.002490043640137" x="6.258689880371094" y="1.966079950332642"/>
+        <POSITION kind="absolute" ref="world" theta="-1.594599962234497" x="6.324220180511475" y="2.211839914321899"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
@@ -126,10 +184,10 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-  <ANNOTATION label="room:living room">
+ <ANNOTATION label="room:living room">
     <TIMESTAMP>
-      <INSERTED value="1536149005076"/>
-      <UPDATED value="1536149005076"/>
+      <INSERTED value="1536758910542"/>
+      <UPDATED value="1536758910542"/>
     </TIMESTAMP>
     <GENERATOR>unknown</GENERATOR>
     <VIEWPOINT category="VIEW" label="main">
@@ -141,50 +199,50 @@
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536149251020"/>
-          <UPDATED value="1536149251020"/>
+          <INSERTED value="1536758961396"/>
+          <UPDATED value="1536758961396"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="2.208349943161011" x="3.260420083999634" y="2.9163498878479"/>
+        <POSITION kind="absolute" ref="world" theta="-2.662080049514771" x="2.9163498878479" y="2.621439933776855"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
       <GENERATOR>unknown</GENERATOR>
       <TIMESTAMP>
-        <INSERTED value="1536149005076"/>
-        <UPDATED value="1536149005076"/>
+        <INSERTED value="1536758910566"/>
+        <UPDATED value="1536758910566"/>
       </TIMESTAMP>
       <POINT2D scope="GLOBAL" x="5029.88818359375" y="1064.9599609375">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536149010322"/>
-          <UPDATED value="1536149010322"/>
+          <INSERTED value="1536758910569"/>
+          <UPDATED value="1536758910569"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="4947.9677734375" y="5488.6396484375">
+      <POINT2D scope="GLOBAL" x="5046.27197265625" y="3063.807861328125">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536149010323"/>
-          <UPDATED value="1536149010323"/>
+          <INSERTED value="1536758950869"/>
+          <UPDATED value="1536758950869"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="868.3519897460938" y="5423.10400390625">
+      <POINT2D scope="GLOBAL" x="901.1199951171875" y="2965.50390625">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536149010322"/>
-          <UPDATED value="1536149010322"/>
+          <INSERTED value="1536758952026"/>
+          <UPDATED value="1536758952026"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="917.5040283203125" y="1032.192016601562">
+      <POINT2D scope="GLOBAL" x="933.8880004882812" y="1032.192016601562">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536149012553"/>
-          <UPDATED value="1536149012553"/>
+          <INSERTED value="1536758953185"/>
+          <UPDATED value="1536758953185"/>
         </TIMESTAMP>
       </POINT2D>
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-  <ANNOTATION label="location:bar">
+  <ANNOTATION label="location:counter">
     <TIMESTAMP>
       <INSERTED value="1536149163948"/>
       <UPDATED value="1536149163948"/>
