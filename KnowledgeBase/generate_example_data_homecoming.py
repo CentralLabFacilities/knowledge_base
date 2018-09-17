@@ -40,7 +40,7 @@ for annotation in annotationTree.getchildren():
 # check input for sanity
 bdo_names = []
 for anno in annotations:
-    if ':' not in anno.get('label') or 'room' not in anno.get('label') or 'location' not in anno.get('label'):
+    if ':' not in anno.get('label') or('room' not in anno.get('label') and 'location' not in anno.get('label')):
         print('Annotation \"' + anno.get('label') + '\" seems not to follow naming convention! Regex: (room|location):*name*')
         exit(1)
     anno_name = anno.get('label').split(':')[1]
@@ -71,9 +71,10 @@ arena_locations.append(grasp)
 
 kitchen = Room(name='kitchen', numberofdoors='0')
 counter = Location(name='counter', room=kitchen, isbeacon='True', isplacement='True')
+counterold = Location(name='counter_old', room=kitchen, isbeacon='True', isplacement='True')
 arena_rooms.append(kitchen)
 arena_locations.append(counter)
-
+arena_locations.append(counterold)
 
 outside = Room(name='outside', numberofdoors='0')
 arena_rooms.append(outside)

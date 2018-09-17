@@ -40,7 +40,7 @@ for annotation in annotationTree.getchildren():
 # check input for sanity
 bdo_names = []
 for anno in annotations:
-    if ':' not in anno.get('label') or 'room' not in anno.get('label') or 'location' not in anno.get('label'):
+    if ':' not in anno.get('label') or('room' not in anno.get('label') and 'location' not in anno.get('label')):
         print('Annotation \"' + anno.get('label') + '\" seems not to follow naming convention! Regex: (room|location):*name*')
         exit(1)
     anno_name = anno.get('label').split(':')[1]
