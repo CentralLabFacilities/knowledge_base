@@ -184,7 +184,7 @@
     </PRECISEPOLYGON>
   </ANNOTATION>
 
-<ANNOTATION label="grasp">
+  <ANNOTATION label="location:grasp">
     <TIMESTAMP>
       <INSERTED value="1536764280936"/>
       <UPDATED value="1536764280936"/>
@@ -308,17 +308,17 @@
     <GENERATOR>unknown</GENERATOR>
     <VIEWPOINT category="VIEW" label="main">
       <TIMESTAMP>
-        <INSERTED value="1536149269851"/>
-        <UPDATED value="1536149269851"/>
+        <INSERTED value="1536764307119"/>
+        <UPDATED value="1536764307119"/>
       </TIMESTAMP>
       <GENERATOR>unknown</GENERATOR>
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1536149282304"/>
-          <UPDATED value="1536149282304"/>
+          <INSERTED value="1536764312647"/>
+          <UPDATED value="1536764312647"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="-1.64339005947113" x="6.406139850616455" y="3.866620063781738"/>
+        <POSITION kind="absolute" ref="world" theta="-1.595790028572083" x="4.194300174713135" y="2.899970054626465"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
