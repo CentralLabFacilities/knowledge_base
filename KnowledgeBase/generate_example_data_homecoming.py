@@ -61,10 +61,15 @@ livingroom = Room(name='living room', numberofdoors='0')
 arena_rooms.append(livingroom)
 
 
+trophyroom = Room(name='trophy room', numberofdoors='0')
+grasp = Location(name='grasp', room=trophyroom, isbeacon='True', isplacement='True')
+arena_rooms.append(trophyroom)
+arena_locations.append(grasp)
+
 kitchen = Room(name='kitchen', numberofdoors='0')
-bar = Location(name='bar', room=kitchen, isbeacon='True', isplacement='True')
+counter = Location(name='counter', room=kitchen, isbeacon='True', isplacement='True')
 arena_rooms.append(kitchen)
-arena_locations.append(bar)
+arena_locations.append(counter)
 
 
 outside = Room(name='outside', numberofdoors='0')

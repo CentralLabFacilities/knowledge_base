@@ -77,6 +77,7 @@ def convert_annotation(annotation):
     '''
     ano = Annotation()
     ano.label = annotation.get('label')
+    print(ano.label)
 
     for child in annotation.getchildren():
         # may either be a generator, timestamp, precisepolygon or viewpoint

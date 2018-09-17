@@ -32,7 +32,7 @@ mongod_process.start()
 
 #TODO SET CORRRECT PYTHON FILE CLF CSRA MONTREAL ETC
 # execute generate example data and wait for it to write everything to the database files
-call(['python', '../KnowledgeBase/generate_example_data_mt.py', DATABASE_NAME,  ANNOTATION_NAME_CLEANED])
+call(['python', '../KnowledgeBase/generate_example_data_homecoming.py', DATABASE_NAME,  ANNOTATION_NAME_CLEANED])
 time.sleep(3)
 
 # terminate the daemon
@@ -43,8 +43,8 @@ call(['scp', DB_PATH + DATABASE_NAME + '.0', 'sync0r@cadmium:/vol/kbases'])
 call(['scp', DB_PATH + DATABASE_NAME + '.ns', 'sync0r@cadmium:/vol/kbases'])
 
 # copy the database to muthr
-call(['scp', DB_PATH + DATABASE_NAME + '.0', 'sync0r@muthr:/vol/kbases'])
-call(['scp', DB_PATH + DATABASE_NAME + '.ns', 'sync0r@muthr:/vol/kbases'])
+# call(['scp', DB_PATH + DATABASE_NAME + '.0', 'sync0r@muthr:/vol/kbases'])
+# call(['scp', DB_PATH + DATABASE_NAME + '.ns', 'sync0r@muthr:/vol/kbases'])
 
 # remove evidence all evidence
 call(['rm', '-r', DB_PATH])
