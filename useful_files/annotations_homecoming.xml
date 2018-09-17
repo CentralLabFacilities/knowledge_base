@@ -199,10 +199,10 @@
       <ROBOTPOSITION>
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1537189519102"/>
-          <UPDATED value="1537189519102"/>
+          <INSERTED value="1537192714863"/>
+          <UPDATED value="1537192714863"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="0" x="6.291460037231445" y="4.227069854736328"/>
+        <POSITION kind="absolute" ref="world" theta="0" x="6.078460216522217" y="4.177919864654541"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
@@ -211,37 +211,36 @@
         <INSERTED value="1537189138750"/>
         <UPDATED value="1537189138750"/>
       </TIMESTAMP>
-      <POINT2D scope="GLOBAL" x="5963.77587890625" y="4571.13623046875">
+      <POINT2D scope="GLOBAL" x="5816.31982421875" y="4505.60009765625">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1537189529676"/>
-          <UPDATED value="1537189529676"/>
+          <INSERTED value="1537192707657"/>
+          <UPDATED value="1537192707657"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="5963.77587890625" y="3997.69580078125">
+      <POINT2D scope="GLOBAL" x="5783.55224609375" y="3964.927978515625">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1537189530255"/>
-          <UPDATED value="1537189530255"/>
+          <INSERTED value="1537192708490"/>
+          <UPDATED value="1537192708490"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="6635.52001953125" y="3915.776123046875">
+      <POINT2D scope="GLOBAL" x="6373.3759765625" y="3899.391845703125">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1537189531185"/>
-          <UPDATED value="1537189531185"/>
+          <INSERTED value="1537192709215"/>
+          <UPDATED value="1537192709215"/>
         </TIMESTAMP>
       </POINT2D>
-      <POINT2D scope="GLOBAL" x="6537.21630859375" y="4538.3681640625">
+      <POINT2D scope="GLOBAL" x="6422.52783203125" y="4505.60009765625">
         <GENERATOR>unknown</GENERATOR>
         <TIMESTAMP>
-          <INSERTED value="1537189531902"/>
-          <UPDATED value="1537189531902"/>
+          <INSERTED value="1537192709861"/>
+          <UPDATED value="1537192709861"/>
         </TIMESTAMP>
       </POINT2D>
     </PRECISEPOLYGON>
   </ANNOTATION>
-
   <ANNOTATION label="location:grasp">
     <TIMESTAMP>
       <INSERTED value="1536764280936"/>
