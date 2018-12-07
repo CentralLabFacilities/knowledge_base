@@ -2295,7 +2295,7 @@
           <INSERTED value="1529352952469"/>
           <UPDATED value="1529352952469"/>
         </TIMESTAMP>
-        <POSITION kind="absolute" ref="world" theta="1.581889986991882" x="33.70190048217773" y="8.962050437927246"/>
+        <POSITION kind="absolute" ref="world" theta="1.581889986991882" x="33.70190048217773" y="8.762050437927246"/>
       </ROBOTPOSITION>
     </VIEWPOINT>
     <PRECISEPOLYGON>
@@ -2517,6 +2517,21 @@
       <UPDATED value="1529242145006"/>
     </TIMESTAMP>
     <GENERATOR>unknown</GENERATOR>
+    <VIEWPOINT category="VIEW" label="graspfinal">
+      <TIMESTAMP>
+        <INSERTED value="1529547161857"/>
+        <UPDATED value="1529547161857"/>
+      </TIMESTAMP>
+      <GENERATOR>unknown</GENERATOR>
+      <ROBOTPOSITION>
+        <GENERATOR>unknown</GENERATOR>
+        <TIMESTAMP>
+          <INSERTED value="1529547177566"/>
+          <UPDATED value="1529547177566"/>
+        </TIMESTAMP>
+        <POSITION kind="absolute" ref="world" theta="2.000030040740967" x="35.81949996948242" y="9.502719879150391"/>
+      </ROBOTPOSITION>
+    </VIEWPOINT>
     <VIEWPOINT category="VIEW" label="main">
       <TIMESTAMP>
         <INSERTED value="1529202505494"/>
