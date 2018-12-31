@@ -19,6 +19,12 @@ import mongoengine as me
 #utils
 import utils
 
+# class imports for start_empty
+from Classes.KBase import Kbase
+from Classes.Arena import Arena
+from Classes.RCObjects import Rcobjects
+from Classes.Crowd import Crowd
+
 
 # initialize database node by loading config file
 argv = sys.argv
@@ -32,6 +38,10 @@ data = yaml.safe_load(open(path_to_config))
 db_to_use_as_blueprint_name = data['db_name']
 copy_on_startup = data['copy_on_startup']
 mongodb_port = int(data['mongodb_port'])
+
+start_empty = None
+if 'start_empty' in data:
+    start_empty = data['start_empty']
 
 print('Config is as follows: ' + str(data))
 
@@ -48,12 +58,21 @@ def reload_database():
                               fromdb=db_to_use_as_blueprint_name,
                               todb='temp_db')
 
-if copy_on_startup:
+if copy_on_startup and not start_empty:
     # drop the database from the previous run
     db_run = me.connect('temp_db', host="127.0.0.1", port=mongodb_port)
     reload_database()
 else:
     db_run = me.connect(db_to_use_as_blueprint_name, host="127.0.0.1", port=mongodb_port)
+
+if start_empty:
+    print('Creating new, empty Kbase!')
+    arena = Arena(rooms=[], doors=[], locations=[])
+    crowd = Crowd(persons=[])
+    rcobjects = Rcobjects(rcobjects=[])
+
+    kbase = Kbase(arena=arena, crowd=crowd, rcobjects=rcobjects, identifier='TestKBase')
+    utils.save_complete_db(kbase)
 
 print('Connected!')
 
