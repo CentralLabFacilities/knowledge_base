@@ -24,5 +24,14 @@ class Room(me.Document):
         return root
 
     @classmethod
-    def from_xml(cls):
-        pass
+    def from_xml(cls, xml_tree):
+
+        room = Room()
+        room.name = xml_tree.get('name')
+        room.numberofdoors = xml_tree.get('numberofdoors')
+
+        for potential_annot in xml_tree.getchildren():
+            if potential_annot.tag.lower() == Annotation.get_tag().lower():
+                room.annotation = Annotation.from_xml(potential_annot)
+
+        return room
