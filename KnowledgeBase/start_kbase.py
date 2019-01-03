@@ -16,8 +16,9 @@ import handling.data_handling as dh
 import pymongo
 import mongoengine as me
 
-#utils
+# utils
 import utils
+import os
 
 # class imports for start_empty
 from Classes.KBase import Kbase
@@ -34,19 +35,34 @@ if len(argv) < 2:
 path_to_config = argv[1]
 data = yaml.safe_load(open(path_to_config))
 
-#initialize config parameters
+# initialize config parameters
 db_to_use_as_blueprint_name = data['db_name']
 copy_on_startup = data['copy_on_startup']
 mongodb_port = int(data['mongodb_port'])
-
 start_empty = None
 if 'start_empty' in data:
     start_empty = data['start_empty']
 
 print('Config is as follows: ' + str(data))
 
-print('Trying to connect to mongod...')
 
+# check if database files exist
+exists = os.path.isfile('/path/to/file')
+client = pymongo.MongoClient('localhost', mongodb_port)
+dbnames = client.list_database_names()
+database_already_exists = db_to_use_as_blueprint_name in dbnames
+del client
+
+# check for sanity of database existence
+if start_empty and database_already_exists:
+    print('You want to start with an empty database, but the database with name %s already exists! Aborting!', db_to_use_as_blueprint_name)
+    exit(1)
+elif not start_empty and not database_already_exists:
+    print('You want to load a database that does not exist! Aborting! (Name of the db: %s)', db_to_use_as_blueprint_name)
+    exit(1)
+
+
+print('Trying to connect to mongod...')
 db_run = None
 
 
