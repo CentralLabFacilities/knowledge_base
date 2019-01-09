@@ -1,0 +1,4 @@
+db_name: empty_db
+copy_on_startup: False
+mongodb_port: 27018
+start_empty: True
