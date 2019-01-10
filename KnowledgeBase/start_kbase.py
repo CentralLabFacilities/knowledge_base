@@ -39,9 +39,9 @@ data = yaml.safe_load(open(path_to_config))
 db_to_use_as_blueprint_name = data['db_name']
 copy_on_startup = data['copy_on_startup']
 mongodb_port = int(data['mongodb_port'])
-start_empty = None
-if 'start_empty' in data:
-    start_empty = data['start_empty']
+create_on_missing = None
+if 'create_on_missing' in data:
+    create_on_missing = data['create_on_missing']
 
 print('Config is as follows: ' + str(data))
 
@@ -54,11 +54,8 @@ database_already_exists = db_to_use_as_blueprint_name in dbnames
 del client
 
 # check for sanity of database existence
-if start_empty and database_already_exists:
-    print('You want to start with an empty database, but the database with name %s already exists! Aborting!', db_to_use_as_blueprint_name)
-    exit(1)
-elif not start_empty and not database_already_exists:
-    print('You want to load a database that does not exist! Aborting! (Name of the db: %s)', db_to_use_as_blueprint_name)
+if not create_on_missing and not database_already_exists:
+    print('You want to load a database that does not exist! Aborting! (Name of the db: %s)' % db_to_use_as_blueprint_name)
     exit(1)
 
 
@@ -74,14 +71,16 @@ def reload_database():
                               fromdb=db_to_use_as_blueprint_name,
                               todb='temp_db')
 
-if copy_on_startup and not start_empty:
+
+if copy_on_startup and not create_on_missing:
     # drop the database from the previous run
     db_run = me.connect('temp_db', host="127.0.0.1", port=mongodb_port)
     reload_database()
 else:
     db_run = me.connect(db_to_use_as_blueprint_name, host="127.0.0.1", port=mongodb_port)
 
-if start_empty:
+
+if create_on_missing and not database_already_exists:
     print('Creating new, empty Kbase!')
     arena = Arena(rooms=[], doors=[], locations=[])
     crowd = Crowd(persons=[])
@@ -125,7 +124,6 @@ def handle_query(req):
     print('Success: ' + str(ans.success) + ' Errorcode: ' + str(ans.error_code))
     utils.debug_print(ans.answer)
     return ans
-
 
 
 def handle_data(req):
