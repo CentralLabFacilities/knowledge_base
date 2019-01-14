@@ -72,7 +72,7 @@ def reload_database():
                               todb='temp_db')
 
 
-if copy_on_startup and not create_on_missing:
+if copy_on_startup and database_already_exists:
     # drop the database from the previous run
     db_run = me.connect('temp_db', host="127.0.0.1", port=mongodb_port)
     reload_database()
