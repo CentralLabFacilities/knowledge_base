@@ -138,6 +138,10 @@ def reduce_query(query_string, accepted_w_words):
     names += [x.name for x in Room.objects()]
     names += [x.name for x in Person.objects()]
 
+    viewpoints_double_list = [annotation_object.annotation.viewpoints for annotation_object in Location.objects() + Room.objects()]
+    viewpoints = [item for sublist in viewpoints_double_list for item in sublist]
+    names += [viewpoint.label for viewpoint in viewpoints]
+
     # check if the query contains any of those names
     # if yes, replace them with a version where all ' ' are replaced with '%'
     for name in names:
