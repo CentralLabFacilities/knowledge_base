@@ -1,10 +1,11 @@
 import mongoengine as me
 from Room import Room
 from Annotation import Annotation
+from Transmittable import Transmittable
 import xml.etree.ElementTree as ET
 
 
-class Door(me.Document):
+class Door(me.Document, Transmittable):
     roomone = me.ReferenceField(Room)
     roomtwo = me.ReferenceField(Room)
     annotation = me.EmbeddedDocumentField(Annotation)
@@ -24,6 +25,6 @@ class Door(me.Document):
         return root
 
     @classmethod
-    def from_xml(cls):
+    def from_xml(cls, xml_tree):
         pass
-    # may throw no such room exception
+        # may throw no such room exception

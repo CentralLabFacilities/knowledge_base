@@ -1,9 +1,10 @@
 import mongoengine as me
 from Location import Location
+from Transmittable import Transmittable
 import xml.etree.ElementTree as ET
 
 
-class Rcobject(me.Document):
+class Rcobject(me.Document, Transmittable):
     name = me.StringField(max_length=50, unique=True, default='')
     location = me.ReferenceField(Location)
     category = me.StringField(max_length=50, default='')
@@ -35,6 +36,31 @@ class Rcobject(me.Document):
         return root
 
     @classmethod
-    def from_xml(cls):
+    def from_xml(cls, xml_tree):
         pass
         # may throw no such location exception
+
+    def to_xml_local(self):
+        attribs = {x: self.__getattribute__(x) for x in self._fields}
+        location = attribs.pop('location')
+        if location is not None:
+            attribs['room'] = 'sorry, room name can not be correctly determined in local mode' # location.room.name
+            attribs['location'] = location
+        else:
+            attribs['room'] = ''
+            attribs['location'] = ''
+        attribs['graspdifficulty'] = '0'
+        attribs.pop('id')
+        attribs = {x: str(attribs[x]) for x in attribs}
+        root = ET.Element('RCOBJECT', attrib=attribs)
+
+        gen = ET.SubElement(root, 'GENERATOR')
+        gen.text = 'Kbase'
+        time = ET.SubElement(root, 'TIMESTAMP')
+        inserted = ET.SubElement(time, 'INSERTED', {'value': '1'})
+        updated = ET.SubElement(time, 'UPDATED', {'value': '1'})
+        return root
+
+    @classmethod
+    def from_xml_local(cls, xml_tree):
+        pass

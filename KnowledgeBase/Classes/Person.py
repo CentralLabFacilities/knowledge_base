@@ -1,9 +1,10 @@
 import mongoengine as me
 from Positiondata import Positiondata
+from Transmittable import Transmittable
 import xml.etree.ElementTree as ET
 
 
-class Person(me.Document):
+class Person(me.Document, Transmittable):
     age = me.StringField(max_length=10, default='')
     gender = me.StringField(max_length=50, default='')
     shirtcolor = me.StringField(max_length=50, default='')
