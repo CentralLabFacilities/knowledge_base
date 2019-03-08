@@ -3,6 +3,8 @@ from abc import abstractmethod
 
 class Transmittable():
 
+    __class__ = 'do not worry about this string, its just needed for mongoengine to work'
+
     @abstractmethod
     def to_xml(self):
         pass
