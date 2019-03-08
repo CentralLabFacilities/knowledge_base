@@ -1,7 +1,7 @@
-from abc import abstractmethod, ABC
+from abc import abstractmethod
 
 
-class Transmittable(ABC):
+class Transmittable():
 
     @abstractmethod
     def to_xml(self):
