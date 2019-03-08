@@ -1,10 +1,9 @@
 import mongoengine as me
 from Annotation import Annotation
-from Transmittable import Transmittable
 import xml.etree.ElementTree as ET
 
 
-class Room(me.Document, Transmittable):
+class Room(me.Document):
     name = me.StringField(max_length=50, unique=True, default='')
     numberofdoors = me.IntField(default=0)
     annotation = me.EmbeddedDocumentField(Annotation)
