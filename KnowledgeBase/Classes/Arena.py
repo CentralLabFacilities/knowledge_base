@@ -6,7 +6,6 @@ from Transmittable import Transmittable
 import xml.etree.ElementTree as ET
 
 
-
 class Arena(me.Document, Transmittable):
     locations = me.ListField(me.ReferenceField(Location))
     doors = me.ListField(me.ReferenceField(Door))
@@ -30,7 +29,23 @@ class Arena(me.Document, Transmittable):
 
     @classmethod
     def from_xml(cls, xml_tree):
-        pass
+        arena = Arena()
+        locs = []
+        rooms = []
+        doors = []
+        for child in xml_tree.getchildren():
+            if child.tag == 'LOCATION':
+                locs.append(Location.from_xml(child))
+            elif child.tag == 'ROOM':
+                rooms.append(Room.from_xml(child))
+            elif child.tag == 'DOOR':
+                doors.append(Door.from_xml(child))
+
+        arena.locations = locs
+        arena.rooms = rooms
+        arena.doors = doors
+
+        return arena
 
     def to_xml_local(self):
         root = ET.Element('ARENA')
@@ -48,5 +63,22 @@ class Arena(me.Document, Transmittable):
         updated = ET.SubElement(time, 'UPDATED', {'value': '1'})
         return root
 
+    @classmethod
     def from_xml_local(cls, xml_tree):
-        pass
+        arena = Arena()
+        locs = []
+        rooms = []
+        doors = []
+        for child in xml_tree.getchildren():
+            if child.tag == 'LOCATION':
+                locs.append(Location.from_xml_local(child))
+            elif child.tag == 'ROOM':
+                rooms.append(Room.from_xml_local(child))
+            elif child.tag == 'DOOR':
+                doors.append(Door.from_xml_local(child))
+
+        arena.locations = locs
+        arena.rooms = rooms
+        arena.doors = doors
+
+        return arena
