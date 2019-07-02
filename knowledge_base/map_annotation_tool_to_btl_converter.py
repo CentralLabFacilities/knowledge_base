@@ -1,6 +1,6 @@
 # generic imports
 import sys
-from Classes import *
+from knowledge_base.Classes import *
 # XML imports
 import xml.etree.ElementTree as ET
 from xml.dom import minidom

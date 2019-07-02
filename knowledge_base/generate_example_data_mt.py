@@ -1,4 +1,4 @@
-from Classes import *
+from knowledge_base.Classes import *
 import mongoengine as me
 from utils import save_complete_db, add_annotation
 import xml.etree.ElementTree as ET

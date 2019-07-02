@@ -6,7 +6,7 @@ tests = {'saving': True, 'get kbase': True}
 
 import rospy
 from knowledge_base_msgs.srv import *
-from Classes import *
+from knowledge_base.Classes import *
 import xml.etree.ElementTree as ET
 import mongoengine as me
 

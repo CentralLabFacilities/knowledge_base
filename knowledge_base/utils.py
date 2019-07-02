@@ -1,4 +1,4 @@
-from Classes import *
+from knowledge_base.Classes import *
 
 debug = False
 

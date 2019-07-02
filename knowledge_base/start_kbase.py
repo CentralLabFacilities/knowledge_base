@@ -9,22 +9,22 @@ import yaml
 import sys
 
 # handlers
-import handling.query_handling as qh
-import handling.data_handling as dh
+import knowledge_base.handling.query_handling as qh
+import knowledge_base.handling.data_handling as dh
 
 # pymongo and mongoengine
 import pymongo
 import mongoengine as me
 
 # utils
-import utils
+import knowledge_base.utils as utils
 import os
 
 # class imports for start_empty
-from Classes.KBase import Kbase
-from Classes.Arena import Arena
-from Classes.RCObjects import Rcobjects
-from Classes.Crowd import Crowd
+from knowledge_base.Classes.KBase import Kbase
+from knowledge_base.Classes.Arena import Arena
+from knowledge_base.Classes.RCObjects import Rcobjects
+from knowledge_base.Classes.Crowd import Crowd
 
 
 # initialize database node by loading config file

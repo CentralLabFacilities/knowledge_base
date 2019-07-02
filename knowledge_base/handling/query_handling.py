@@ -1,6 +1,6 @@
-from Classes import *
+from knowledge_base.Classes import *
 import xml.etree.ElementTree as ET
-from utils import retrieve_object_by_identifier, get_class_of_bdo
+from knowledge_base.utils import retrieve_object_by_identifier, get_class_of_bdo
 from mongoengine.queryset.visitor import Q
 
 def str_to_xml(str):

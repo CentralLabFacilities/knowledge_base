@@ -1,6 +1,6 @@
-from Classes import *
+from knowledge_base.Classes import *
 import xml.etree.ElementTree as ET
-from utils import retrieve_object_by_identifier, get_class_of_bdo, debug_print
+from knowledge_base.utils import retrieve_object_by_identifier, get_class_of_bdo, debug_print
 import traceback
 
 
